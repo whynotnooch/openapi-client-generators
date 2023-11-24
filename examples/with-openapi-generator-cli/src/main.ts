@@ -13,13 +13,13 @@ async function main() {
 
   console.log(`${playlists.items[0].name}`);
 
-  // const tracksClient = new SpotifyAPI.TracksApi();
-  // const { data: tracks } = await tracksClient.getPlaylistsTracks(
-  //   playlists.items[0].id!
-  // );
+  const tracksClient = new SpotifyAPI.TracksApi();
+  const { data: tracks } = await tracksClient.getPlaylistsTracks(
+    playlists.items[0].id!
+  );
 
-  // console.log(`${tracks?.total} tracks`);
-  // console.log(tracks?.items?.map((t) => t.track?.name));
+  console.log(`${tracks?.total} tracks`);
+  console.log(tracks?.items?.map((t) => t.track?.name));
 }
 
 main();

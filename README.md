@@ -11,6 +11,8 @@ Many examples out there in articles and blogs are based of the _Pet Store_ OpenA
 | openapi-typescript-fetch<br /> + openapi-typescript<br />[NPM](https://www.npmjs.com/package/openapi-typescript-fetch) - [Bundlephobia](https://bundlephobia.com/package/openapi-typescript-fetch)       |                                             5.03 kB │ gzip: 2.05 kB | -   | ![npm](https://img.shields.io/npm/dm/openapi-typescript-fetch?label=openapi-typescript-fetch) ![npm](https://img.shields.io/npm/dm/openapi-typescript?label=openapi-typescript) |
 | openapi-typescript-codegen (fetch)<br />[NPM](https://www.npmjs.com/package/openapi-typescript-codegen)                                                                                                  |                                            87.47 kB │ gzip: 7.06 kB | -   |                                                                                                                ![npm](https://img.shields.io/npm/dm/openapi-typescript-codegen) |
 | openapi-typescript-codegen (axios)<br />[NPM](https://www.npmjs.com/package/openapi-typescript-codegen)                                                                                                  |                                          117.06 kB │ gzip: 18.62 kB | -   |                                                                                                                ![npm](https://img.shields.io/npm/dm/openapi-typescript-codegen) |
+| orval<br />[NPM](https://www.npmjs.com/package/orval) - [Docs](https://orval.dev/)                                                                                                                       |  Min: 30.43 kB │ gzip: 12.31 kB<br />Max: 41.79 kB │ gzip: 14.75 kB | -   |                                                                                                                                     ![npm](https://img.shields.io/npm/dm/orval) |
+| orval (fetch)<br />[NPM](https://www.npmjs.com/package/orval) - [Docs](https://orval.dev/)                                                                                                               |     Min: 1.36 kB │ gzip: 0.74 kB<br />Max: 11.48 kB │ gzip: 3.12 kB | -   |                                                                                                                                     ![npm](https://img.shields.io/npm/dm/orval) |
 
 ### openapi-generator-cli
 
@@ -28,4 +30,11 @@ src/generated/spotify/api.ts:7714:13 - error TS2451: Cannot redeclare block-scop
 7714 export type FollowArtistsUsersTypeEnum = typeof FollowArtistsUsersTypeEnum[keyof typeof FollowArtistsUsersTypeEnum];
                  ~~~~~~~~~~~~~~~~~~~~~~~~~~
 ...
+```
+
+### orval
+
+```
+Argument of type '{ url: string; method: "put"; headers: { 'Content-Type': string; }; data: FollowArtistsUsersBody; params: FollowArtistsUsersParams; }' is not assignable to parameter of type '{ url: string; method: "get" | "post" | "put" | "delete" | "patch"; params?: any; data?: unknown; responseType?: string | undefined; }'.
+  Object literal may only specify known properties, and 'headers' does not exist in type '{ url: string; method: "get" | "post" | "put" | "delete" | "patch"; params?: any; data?: unknown; responseType?: string | undefined; }'.
 ```
