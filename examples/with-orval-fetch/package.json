@@ -6,9 +6,12 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "generate": "orval"
   },
   "devDependencies": {
+    "@types/node": "^20.10.0",
+    "orval": "^6.20.0",
     "typescript": "^5.0.2",
     "vite": "^4.4.5"
   }
