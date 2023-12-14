@@ -5,12 +5,6 @@ async function main() {
     address: "http://localhost:5678",
   });
 
-  client["get-list-users-playlists"]({
-    params: {
-      user_id: "abc123",
-      limit: 1,
-    },
-  });
   const { code: c1, data: playlists } = await client[
     "get-list-users-playlists"
   ]({
