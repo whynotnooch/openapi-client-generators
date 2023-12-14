@@ -1,14 +1,16 @@
 {
-  "name": "with-openapi-typescript",
+  "name": "with-openapi-fetch",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
+    "generate": "openapi-typescript ../../src/spotify-openapi.yaml --output ./src/generated/spotify.ts",
     "preview": "vite preview"
   },
   "devDependencies": {
+    "openapi-typescript": "^6.7.3",
     "typescript": "^5.0.2",
     "vite": "^4.4.5"
   },
