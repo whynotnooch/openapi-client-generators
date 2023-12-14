@@ -32,7 +32,7 @@ paths:
     get:
       description: |
         Get Spotify catalog information for multiple albums identified by their Spotify IDs.
-            parameters:
+      parameters:
         - $ref: "#/components/parameters/QueryAlbumIds"
         - $ref: "#/components/parameters/QueryMarket"
       responses:
@@ -58,7 +58,7 @@ paths:
     get:
       description: |
         Get Spotify catalog information for a single album.
-            parameters:
+      parameters:
         - $ref: "#/components/parameters/PathAlbumId"
         - $ref: "#/components/parameters/QueryMarket"
       responses:
@@ -85,7 +85,7 @@ paths:
       description: |
         Get Spotify catalog information about an album’s tracks.
         Optional parameters can be used to limit the number of tracks returned.
-            parameters:
+      parameters:
         - $ref: "#/components/parameters/PathAlbumId"
         - $ref: "#/components/parameters/QueryMarket"
         - $ref: "#/components/parameters/QueryLimit"
@@ -114,7 +114,7 @@ paths:
     get:
       description: |
         Get Spotify catalog information for several artists based on their Spotify IDs.
-            parameters:
+      parameters:
         - in: query
           name: ids
           required: true
@@ -147,7 +147,7 @@ paths:
     get:
       description: |
         Get Spotify catalog information for a single artist identified by their unique Spotify ID.
-            parameters:
+      parameters:
         - $ref: "#/components/parameters/PathArtistId"
       responses:
         "200":
@@ -172,7 +172,7 @@ paths:
     get:
       description: |
         Get Spotify catalog information about an artist's albums.
-            parameters:
+      parameters:
         - $ref: "#/components/parameters/PathArtistId"
         - $ref: "#/components/parameters/QueryIncludeGroups"
         - $ref: "#/components/parameters/QueryMarket"
@@ -202,7 +202,7 @@ paths:
     get:
       description: |
         Get Spotify catalog information about artists similar to a given artist. Similarity is based on analysis of the Spotify community's [listening history](http://news.spotify.com/se/2010/02/03/related-artists/).
-            parameters:
+      parameters:
         - $ref: "#/components/parameters/PathArtistId"
       responses:
         "200":
@@ -227,7 +227,7 @@ paths:
     get:
       description: |
         Get Spotify catalog information about an artist's top tracks by country.
-            parameters:
+      parameters:
         - $ref: "#/components/parameters/PathArtistId"
         - $ref: "#/components/parameters/QueryMarket"
       responses:
@@ -254,7 +254,7 @@ paths:
     get:
       description: |
         Get a low-level audio analysis for a track in the Spotify catalog. The audio analysis describes the track’s structure and musical content, including rhythm, pitch, and timbre.
-            parameters:
+      parameters:
         - in: path
           name: id
           required: true
@@ -288,7 +288,7 @@ paths:
     get:
       description: |
         Get audio features for multiple tracks based on their Spotify IDs.
-            parameters:
+      parameters:
         - in: query
           name: ids
           required: true
@@ -323,7 +323,7 @@ paths:
       description: |
         Get audio feature information for a single track identified by its unique
         Spotify ID.
-            parameters:
+      parameters:
         - in: path
           name: id
           required: true
@@ -357,7 +357,7 @@ paths:
       description: |
         Get Spotify catalog information for several audiobooks identified by their Spotify IDs.<br />
         **Note: Audiobooks are only available for the US, UK, Ireland, New Zealand and Australia markets.**
-            parameters:
+      parameters:
         - $ref: "#/components/parameters/QueryAudiobookIds"
         - $ref: "#/components/parameters/QueryMarket"
       responses:
@@ -384,7 +384,7 @@ paths:
       description: |
         Get Spotify catalog information for a single audiobook.<br />
         **Note: Audiobooks are only available for the US, UK, Ireland, New Zealand and Australia markets.**
-            parameters:
+      parameters:
         - $ref: "#/components/parameters/PathAudiobookId"
         - $ref: "#/components/parameters/QueryMarket"
       responses:
@@ -415,7 +415,7 @@ paths:
       description: |
         Get Spotify catalog information about an audiobook's chapters.<br />
         **Note: Audiobooks are only available for the US, UK, Ireland, New Zealand and Australia markets.**
-            parameters:
+      parameters:
         - $ref: "#/components/parameters/PathAudiobookId"
         - $ref: "#/components/parameters/QueryMarket"
         - $ref: "#/components/parameters/QueryLimit"
@@ -444,7 +444,7 @@ paths:
     get:
       description: |
         Get a list of categories used to tag items in Spotify (on, for example, the Spotify player’s “Browse” tab).
-            parameters:
+      parameters:
         - in: query
           name: country
           required: false
@@ -489,7 +489,7 @@ paths:
     get:
       description: |
         Get a single category used to tag items in Spotify (on, for example, the Spotify player’s “Browse” tab).
-            parameters:
+      parameters:
         - in: path
           name: category_id
           required: true
@@ -540,7 +540,7 @@ paths:
     get:
       description: |
         Get a list of Spotify playlists tagged with a particular category.
-            parameters:
+      parameters:
         - in: path
           name: category_id
           required: true
@@ -585,7 +585,7 @@ paths:
     get:
       description: |
         Get a list of Spotify featured playlists (shown, for example, on a Spotify player's 'Browse' tab).
-            parameters:
+      parameters:
         - in: query
           name: country
           required: false
@@ -639,7 +639,7 @@ paths:
     get:
       description: |
         Get a list of new album releases featured in Spotify (shown, for example, on a Spotify player’s “Browse” tab).
-            parameters:
+      parameters:
         - in: query
           name: country
           required: false
@@ -675,7 +675,7 @@ paths:
       description: |
         Get Spotify catalog information for several chapters identified by their Spotify IDs.<br />
         **Note: Chapters are only available for the US, UK, Ireland, New Zealand and Australia markets.**
-            parameters:
+      parameters:
         - $ref: "#/components/parameters/QueryChapterIds"
         - $ref: "#/components/parameters/QueryMarket"
       responses:
@@ -702,7 +702,7 @@ paths:
       description: |
         Get Spotify catalog information for a single chapter.<br />
         **Note: Chapters are only available for the US, UK, Ireland, New Zealand and Australia markets.**
-            parameters:
+      parameters:
         - $ref: "#/components/parameters/PathChapterId"
         - $ref: "#/components/parameters/QueryMarket"
       responses:
@@ -728,7 +728,7 @@ paths:
     get:
       description: |
         Get Spotify catalog information for several episodes based on their Spotify IDs.
-            parameters:
+      parameters:
         - in: query
           name: ids
           required: true
@@ -764,7 +764,7 @@ paths:
       description: |
         Get Spotify catalog information for a single episode identified by its
         unique Spotify ID.
-            parameters:
+      parameters:
         - in: path
           name: id
           required: true
@@ -798,7 +798,7 @@ paths:
     get:
       description: |
         Get the list of markets where Spotify is available.
-            responses:
+      responses:
         "200":
           $ref: "#/components/responses/Markets"
         "401":
@@ -822,7 +822,7 @@ paths:
       description: |
         Get detailed profile information about the current user (including the
         current user's username).
-            responses:
+      responses:
         "200":
           $ref: "#/components/responses/OnePrivateUser"
         "401":
@@ -847,7 +847,7 @@ paths:
     delete:
       description: |
         Remove one or more albums from the current user's 'Your Music' library.
-            parameters:
+      parameters:
         - $ref: "#/components/parameters/QueryAlbumIds"
       requestBody:
         content:
@@ -884,7 +884,7 @@ paths:
     get:
       description: |
         Get a list of the albums saved in the current Spotify user's 'Your Music' library.
-            parameters:
+      parameters:
         - $ref: "#/components/parameters/QueryLimit"
         - $ref: "#/components/parameters/QueryOffset"
         - $ref: "#/components/parameters/QueryMarket"
@@ -910,7 +910,7 @@ paths:
     put:
       description: |
         Save one or more albums to the current user's 'Your Music' library.
-            parameters:
+      parameters:
         - $ref: "#/components/parameters/QueryAlbumIds"
       requestBody:
         content:
@@ -950,7 +950,7 @@ paths:
     get:
       description: |
         Check if one or more albums is already saved in the current Spotify user's 'Your Music' library.
-            parameters:
+      parameters:
         - $ref: "#/components/parameters/QueryAlbumIds"
       responses:
         "200":
@@ -977,7 +977,7 @@ paths:
     delete:
       description: |
         Remove one or more audiobooks from the Spotify user's library.
-            parameters:
+      parameters:
         - $ref: "#/components/parameters/QueryAudiobookIds"
       responses:
         "200":
@@ -1001,7 +1001,7 @@ paths:
     get:
       description: |
         Get a list of the audiobooks saved in the current Spotify user's 'Your Music' library.
-            parameters:
+      parameters:
         - $ref: "#/components/parameters/QueryLimit"
         - $ref: "#/components/parameters/QueryOffset"
       responses:
@@ -1026,7 +1026,7 @@ paths:
     put:
       description: |
         Save one or more audiobooks to the current Spotify user's library.
-            parameters:
+      parameters:
         - $ref: "#/components/parameters/QueryAudiobookIds"
       responses:
         "200":
@@ -1053,7 +1053,7 @@ paths:
     get:
       description: |
         Check if one or more audiobooks are already saved in the current Spotify user's library.
-            parameters:
+      parameters:
         - $ref: "#/components/parameters/QueryAudiobookIds"
       responses:
         "200":
@@ -1081,7 +1081,7 @@ paths:
       description: |
         Remove one or more episodes from the current user's library.<br/>
         This API endpoint is in __beta__ and could change without warning. Please share any feedback that you have, or issues that you discover, in our [developer community forum](https://community.spotify.com/t5/Spotify-for-Developers/bd-p/Spotify_Developer).
-            parameters:
+      parameters:
         - $ref: "#/components/parameters/QueryTrackIds"
       requestBody:
         content:
@@ -1119,7 +1119,7 @@ paths:
       description: |
         Get a list of the episodes saved in the current Spotify user's library.<br/>
         This API endpoint is in __beta__ and could change without warning. Please share any feedback that you have, or issues that you discover, in our [developer community forum](https://community.spotify.com/t5/Spotify-for-Developers/bd-p/Spotify_Developer).
-            parameters:
+      parameters:
         - $ref: "#/components/parameters/QueryMarket"
         - $ref: "#/components/parameters/QueryLimit"
         - $ref: "#/components/parameters/QueryOffset"
@@ -1147,7 +1147,7 @@ paths:
       description: |
         Save one or more episodes to the current user's library.<br/>
         This API endpoint is in __beta__ and could change without warning. Please share any feedback that you have, or issues that you discover, in our [developer community forum](https://community.spotify.com/t5/Spotify-for-Developers/bd-p/Spotify_Developer).
-            parameters:
+      parameters:
         - in: query
           name: ids
           required: true
@@ -1198,7 +1198,7 @@ paths:
       description: |
         Check if one or more episodes is already saved in the current Spotify user's 'Your Episodes' library.<br/>
         This API endpoint is in __beta__ and could change without warning. Please share any feedback that you have, or issues that you discover, in our [developer community forum](https://community.spotify.com/t5/Spotify-for-Developers/bd-p/Spotify_Developer)..
-            parameters:
+      parameters:
         - in: query
           name: ids
           required: true
@@ -1233,7 +1233,7 @@ paths:
     delete:
       description: |
         Remove the current user as a follower of one or more artists or other Spotify users.
-            parameters:
+      parameters:
         - in: query
           name: type
           required: true
@@ -1291,7 +1291,7 @@ paths:
     get:
       description: |
         Get the current user's followed artists.
-            parameters:
+      parameters:
         - in: query
           name: type
           required: true
@@ -1336,7 +1336,7 @@ paths:
     put:
       description: |
         Add the current user as a follower of one or more artists or other Spotify users.
-            parameters:
+      parameters:
         - in: query
           name: type
           required: true
@@ -1401,7 +1401,7 @@ paths:
     get:
       description: |
         Check to see if the current user is following one or more artists or other Spotify users.
-            parameters:
+      parameters:
         - in: query
           name: type
           required: true
@@ -1449,7 +1449,7 @@ paths:
     get:
       description: |
         Get information about the user’s current playback state, including track or episode, progress, and active device.
-            parameters:
+      parameters:
         - $ref: "#/components/parameters/QueryMarket"
         - $ref: "#/components/parameters/QueryAdditionalTypes"
       responses:
@@ -1521,7 +1521,7 @@ paths:
     get:
       description: |
         Get the object currently being played on the user's Spotify account.
-            parameters:
+      parameters:
         - $ref: "#/components/parameters/QueryMarket"
         - $ref: "#/components/parameters/QueryAdditionalTypes"
       responses:
@@ -1548,7 +1548,7 @@ paths:
     get:
       description: |
         Get information about a user’s available devices.
-            responses:
+      responses:
         "200":
           $ref: "#/components/responses/ManyDevices"
         "401":
@@ -1572,7 +1572,7 @@ paths:
     post:
       description: |
         Skips to next track in the user’s queue.
-            parameters:
+      parameters:
         - in: query
           name: device_id
           required: false
@@ -1605,7 +1605,7 @@ paths:
     put:
       description: |
         Pause playback on the user's account.
-            parameters:
+      parameters:
         - in: query
           name: device_id
           required: false
@@ -1639,7 +1639,7 @@ paths:
     put:
       description: |
         Start a new context or resume current playback on the user's active device.
-            parameters:
+      parameters:
         - in: query
           name: device_id
           required: false
@@ -1708,7 +1708,7 @@ paths:
     post:
       description: |
         Skips to previous track in the user’s queue.
-            parameters:
+      parameters:
         - in: query
           name: device_id
           required: false
@@ -1743,7 +1743,7 @@ paths:
     get:
       description: |
         Get the list of objects that make up the user's queue.
-            responses:
+      responses:
         "200":
           $ref: "#/components/responses/Queue"
         "401":
@@ -1764,7 +1764,7 @@ paths:
     post:
       description: |
         Add an item to the end of the user's current playback queue.
-            parameters:
+      parameters:
         - in: query
           name: uri
           required: true
@@ -1809,7 +1809,7 @@ paths:
       description: |
         Get tracks from the current user's recently played tracks.
         _**Note**: Currently doesn't support podcast episodes._
-            parameters:
+      parameters:
         - $ref: "#/components/parameters/QueryLimit"
         - in: query
           name: after
@@ -1857,7 +1857,7 @@ paths:
       description: |
         Set the repeat mode for the user's playback. Options are repeat-track,
         repeat-context, and off.
-            parameters:
+      parameters:
         - in: query
           name: state
           required: true
@@ -1904,7 +1904,7 @@ paths:
     put:
       description: |
         Seeks to the given position in the user’s currently playing track.
-            parameters:
+      parameters:
         - in: query
           name: position_ms
           required: true
@@ -1950,7 +1950,7 @@ paths:
     put:
       description: |
         Toggle shuffle on or off for user’s playback.
-            parameters:
+      parameters:
         - in: query
           name: state
           required: true
@@ -1995,7 +1995,7 @@ paths:
     put:
       description: |
         Set the volume for the user’s current playback device.
-            parameters:
+      parameters:
         - in: query
           name: volume_percent
           required: true
@@ -2039,7 +2039,7 @@ paths:
       description: |
         Get a list of the playlists owned or followed by the current Spotify
         user.
-            parameters:
+      parameters:
         - $ref: "#/components/parameters/QueryLimit"
         - in: query
           name: offset
@@ -2078,7 +2078,7 @@ paths:
     delete:
       description: |
         Delete one or more shows from current Spotify user's library.
-            parameters:
+      parameters:
         - $ref: "#/components/parameters/QueryShowIds"
         - $ref: "#/components/parameters/QueryMarket"
       requestBody:
@@ -2116,7 +2116,7 @@ paths:
     get:
       description: |
         Get a list of shows saved in the current Spotify user's library. Optional parameters can be used to limit the number of shows returned.
-            parameters:
+      parameters:
         - $ref: "#/components/parameters/QueryLimit"
         - $ref: "#/components/parameters/QueryOffset"
       responses:
@@ -2141,7 +2141,7 @@ paths:
     put:
       description: |
         Save one or more shows to current Spotify user's library.
-            parameters:
+      parameters:
         - $ref: "#/components/parameters/QueryShowIds"
       requestBody:
         content:
@@ -2181,7 +2181,7 @@ paths:
     get:
       description: |
         Check if one or more shows is already saved in the current Spotify user's library.
-            parameters:
+      parameters:
         - $ref: "#/components/parameters/QueryShowIds"
       responses:
         "200":
@@ -2208,7 +2208,7 @@ paths:
     get:
       description: |
         Get the current user's top artists based on calculated affinity.
-            parameters:
+      parameters:
         - in: query
           name: time_range
           required: false
@@ -2247,7 +2247,7 @@ paths:
     get:
       description: |
         Get the current user's top tracks based on calculated affinity.
-            parameters:
+      parameters:
         - in: query
           name: time_range
           required: false
@@ -2286,7 +2286,7 @@ paths:
     delete:
       description: |
         Remove one or more tracks from the current user's 'Your Music' library.
-            parameters:
+      parameters:
         - $ref: "#/components/parameters/QueryTrackIds"
       requestBody:
         content:
@@ -2323,7 +2323,7 @@ paths:
     get:
       description: |
         Get a list of the songs saved in the current Spotify user's 'Your Music' library.
-            parameters:
+      parameters:
         - $ref: "#/components/parameters/QueryMarket"
         - $ref: "#/components/parameters/QueryLimit"
         - $ref: "#/components/parameters/QueryOffset"
@@ -2349,7 +2349,7 @@ paths:
     put:
       description: |
         Save one or more tracks to the current user's 'Your Music' library.
-            parameters:
+      parameters:
         - $ref: "#/components/parameters/QueryTrackIds"
       requestBody:
         content:
@@ -2391,7 +2391,7 @@ paths:
     get:
       description: |
         Check if one or more tracks is already saved in the current Spotify user's 'Your Music' library.
-            parameters:
+      parameters:
         - $ref: "#/components/parameters/QueryTrackIds"
       responses:
         "200":
@@ -2418,7 +2418,7 @@ paths:
     get:
       description: |
         Get a playlist owned by a Spotify user.
-            parameters:
+      parameters:
         - $ref: "#/components/parameters/PathPlaylistId"
         - $ref: "#/components/parameters/QueryMarket"
         - in: query
@@ -2460,7 +2460,7 @@ paths:
       description: |
         Change a playlist's name and public/private state. (The user must, of
         course, own the playlist.)
-            parameters:
+      parameters:
         - $ref: "#/components/parameters/PathPlaylistId"
       requestBody:
         content:
@@ -2516,7 +2516,7 @@ paths:
     delete:
       description: |
         Remove the current user as a follower of a playlist.
-            parameters:
+      parameters:
         - $ref: "#/components/parameters/PathPlaylistId"
       responses:
         "200":
@@ -2541,7 +2541,7 @@ paths:
     put:
       description: |
         Add the current user as a follower of a playlist.
-            parameters:
+      parameters:
         - $ref: "#/components/parameters/PathPlaylistId"
       requestBody:
         content:
@@ -2582,7 +2582,7 @@ paths:
     get:
       description: |
         Check to see if one or more Spotify users are following a specified playlist.
-            parameters:
+      parameters:
         - $ref: "#/components/parameters/PathPlaylistId"
         - in: query
           name: ids
@@ -2617,7 +2617,7 @@ paths:
     get:
       description: |
         Get the current image associated with a specific playlist.
-            parameters:
+      parameters:
         - $ref: "#/components/parameters/PathPlaylistId"
       responses:
         "200":
@@ -2639,7 +2639,7 @@ paths:
     put:
       description: |
         Replace the image used to represent a specific playlist.
-            parameters:
+      parameters:
         - $ref: "#/components/parameters/PathPlaylistId"
       requestBody:
         content:
@@ -2675,7 +2675,7 @@ paths:
     delete:
       description: |
         Remove one or more items from a user's playlist.
-            parameters:
+      parameters:
         - $ref: "#/components/parameters/PathPlaylistId"
       requestBody:
         content:
@@ -2725,7 +2725,7 @@ paths:
     get:
       description: |
         Get full details of the items of a playlist owned by a Spotify user.
-            parameters:
+      parameters:
         - $ref: "#/components/parameters/PathPlaylistId"
         - $ref: "#/components/parameters/QueryMarket"
         - in: query
@@ -2780,7 +2780,7 @@ paths:
     post:
       description: |
         Add one or more items to a user's playlist.
-            parameters:
+      parameters:
         - $ref: "#/components/parameters/PathPlaylistId"
         - in: query
           name: position
@@ -2847,7 +2847,7 @@ paths:
         <br/>
         **Note**: Replace and reorder are mutually exclusive operations which share the same endpoint, but have different parameters.
         These operations can't be applied together in a single request.
-            parameters:
+      parameters:
         - $ref: "#/components/parameters/PathPlaylistId"
         - in: query
           name: uris
@@ -2916,7 +2916,7 @@ paths:
         Recommendations are generated based on the available information for a given seed entity and matched against similar artists and tracks. If there is sufficient information about the provided seeds, a list of tracks will be returned together with pool size details.
 
         For artists and tracks that are very new or obscure there might not be enough data to generate a list of tracks.
-            parameters:
+      parameters:
         - in: query
           name: limit
           required: false
@@ -3375,7 +3375,7 @@ paths:
     get:
       description: |
         Retrieve a list of available genres seed parameter values for [recommendations](/documentation/web-api/reference/get-recommendations).
-            responses:
+      responses:
         "200":
           $ref: "#/components/responses/ManyGenres"
         "401":
@@ -3400,7 +3400,7 @@ paths:
         Get Spotify catalog information about albums, artists, playlists, tracks, shows, episodes or audiobooks
         that match a keyword string.<br />
         **Note: Audiobooks are only available for the US, UK, Ireland, New Zealand and Australia markets.**
-            parameters:
+      parameters:
         - in: query
           name: q
           required: true
@@ -3499,7 +3499,7 @@ paths:
     get:
       description: |
         Get Spotify catalog information for several shows based on their Spotify IDs.
-            parameters:
+      parameters:
         - $ref: "#/components/parameters/QueryMarket"
         - $ref: "#/components/parameters/QueryShowIds"
       responses:
@@ -3526,7 +3526,7 @@ paths:
       description: |
         Get Spotify catalog information for a single show identified by its
         unique Spotify ID.
-            parameters:
+      parameters:
         - $ref: "#/components/parameters/QueryMarket"
         - $ref: "#/components/parameters/PathShowId"
       responses:
@@ -3553,7 +3553,7 @@ paths:
     get:
       description: |
         Get Spotify catalog information about an show’s episodes. Optional parameters can be used to limit the number of episodes returned.
-            parameters:
+      parameters:
         - $ref: "#/components/parameters/PathShowId"
         - $ref: "#/components/parameters/QueryMarket"
         - $ref: "#/components/parameters/QueryLimit"
@@ -3583,7 +3583,7 @@ paths:
     get:
       description: |
         Get Spotify catalog information for multiple tracks based on their Spotify IDs.
-            parameters:
+      parameters:
         - $ref: "#/components/parameters/QueryMarket"
         - $ref: "#/components/parameters/QueryTrackIds"
       responses:
@@ -3610,7 +3610,7 @@ paths:
       description: |
         Get Spotify catalog information for a single track identified by its
         unique Spotify ID.
-            parameters:
+      parameters:
         - in: path
           name: id
           required: true
@@ -3645,7 +3645,7 @@ paths:
     get:
       description: |
         Get public profile information about a Spotify user.
-            parameters:
+      parameters:
         - $ref: "#/components/parameters/PathUserId"
       responses:
         "200":
@@ -3670,7 +3670,7 @@ paths:
     get:
       description: |
         Get a list of the playlists owned or followed by a Spotify user.
-            parameters:
+      parameters:
         - $ref: "#/components/parameters/PathUserId"
         - $ref: "#/components/parameters/QueryLimit"
         - in: query
@@ -3709,7 +3709,7 @@ paths:
       description: |
         Create a playlist for a Spotify user. (The playlist will be empty until
         you [add tracks](/documentation/web-api/reference/add-tracks-to-playlist).)
-            parameters:
+      parameters:
         - $ref: "#/components/parameters/PathUserId"
       requestBody:
         content:
