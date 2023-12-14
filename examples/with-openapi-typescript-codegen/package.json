@@ -6,9 +6,11 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
+    "generate": "openapi --input ../../src/spotify-openapi.yaml --output ./src/generated/spotify --name ApiClient",
     "preview": "vite preview"
   },
   "devDependencies": {
+    "openapi-typescript-codegen": "^0.25.0",
     "typescript": "^5.0.2",
     "vite": "^4.4.5"
   }
