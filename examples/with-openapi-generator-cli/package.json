@@ -6,9 +6,11 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
+    "generate": "openapi-generator-cli generate -i ../../src/spotify-openapi.yaml -g typescript-axios -o ./src/generated/spotify",
     "preview": "vite preview"
   },
   "devDependencies": {
+    "@openapitools/openapi-generator-cli": "^2.7.0",
     "typescript": "^5.0.2",
     "vite": "^4.4.5"
   },
