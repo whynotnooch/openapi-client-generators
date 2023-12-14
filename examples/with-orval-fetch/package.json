@@ -6,8 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview",
-    "generate": "orval"
+    "generate": "orval",
+    "preview": "vite preview"
   },
   "devDependencies": {
     "@types/node": "^20.10.0",
