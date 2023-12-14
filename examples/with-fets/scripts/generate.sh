@@ -1,13 +1,17 @@
 #!env sh
 
-workingFile=$(mktemp)
+if [ ! -f "$1" ]; then
+  workingFile=$(mktemp)
 
-echo "Downloading OpenAPI spec at $1..."
-curl -s -o "$workingFile" "$1"
-if [ $? != "0" ]; then
-  echo "Download failed."
+  echo "Downloading OpenAPI spec at $1..."
+  curl -s -o "$workingFile" "$1"
+  if [ $? != "0" ]; then
+    echo "Download failed."
 
-  exit;
+    exit;
+  fi
+else
+  workingFile=$1
 fi
 
 jsonFile=$workingFile
@@ -23,7 +27,3 @@ if [ "$3" = "yaml" ]; then
 fi
 
 echo -E "declare const schema: $(cat $jsonFile); export default schema;" > $2
-
-echo "Cleaning up..."
-rm $jsonFile
-rm $workingFile
