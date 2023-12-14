@@ -6,9 +6,11 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
+    "generate": "oazapfts ../../src/spotify-openapi.yaml ./src/generated/spotify.ts",
     "preview": "vite preview"
   },
   "devDependencies": {
+    "oazapfts": "^4.11.2",
     "typescript": "^5.0.2",
     "vite": "^4.4.5"
   }
