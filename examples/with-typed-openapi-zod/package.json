@@ -6,15 +6,15 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "generate": "typed-openapi ./src/openapi.yaml -o ./src/generated/spotify.ts -r zod",
+    "generate": "typed-openapi ../../src/spotify-openapi-no-operation-id.yaml -o ./src/generated/spotify.ts -r zod",
     "preview": "vite preview"
   },
   "devDependencies": {
+    "typed-openapi": "^0.3.0",
     "typescript": "^5.0.2",
     "vite": "^4.4.5"
   },
   "dependencies": {
-    "typed-openapi": "^0.3.0",
     "zod": "^3.22.4"
   }
 }

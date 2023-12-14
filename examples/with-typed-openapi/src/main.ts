@@ -9,6 +9,7 @@ const fetcher = (method: Method, url: string, params?: EndpointParameters) => {
     res.json()
   );
 };
+
 async function main() {
   const client = createApiClient(fetcher, "http://localhost:5678");
 
