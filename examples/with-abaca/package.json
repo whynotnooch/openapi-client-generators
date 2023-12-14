@@ -1,0 +1,17 @@
+{
+  "name": "with-abaca",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "generate": "abaca generate ../../src/spotify-openapi.yaml --output src/generated/spotify.ts",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "abaca": "^0.10.10",
+    "typescript": "^5.0.2",
+    "vite": "^4.4.5"
+  }
+}
