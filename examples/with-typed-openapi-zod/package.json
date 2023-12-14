@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
+    "generate": "typed-openapi ./src/openapi.yaml -o ./src/generated/spotify.ts -r zod",
     "preview": "vite preview"
   },
   "devDependencies": {
