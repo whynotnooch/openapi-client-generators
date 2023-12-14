@@ -1,7 +1,6 @@
 export default {
   spotify: {
-    input:
-      "https://raw.githubusercontent.com/APIs-guru/openapi-directory/main/APIs/spotify.com/sonallux/2023.2.27/openapi.yaml",
+    input: "../../src/spotify-openapi.yaml",
     output: {
       override: {
         mutator: {

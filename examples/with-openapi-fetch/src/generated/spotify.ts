@@ -8,7 +8,7 @@ export interface paths {
   "/albums": {
     /**
      * Get Several Albums
-     *  
+     *
      * @description Get Spotify catalog information for multiple albums identified by their Spotify IDs.
      */
     get: operations["get-multiple-albums"];
@@ -16,7 +16,7 @@ export interface paths {
   "/albums/{id}": {
     /**
      * Get Album
-     *  
+     *
      * @description Get Spotify catalog information for a single album.
      */
     get: operations["get-an-album"];
@@ -24,7 +24,7 @@ export interface paths {
   "/albums/{id}/tracks": {
     /**
      * Get Album Tracks
-     *  
+     *
      * @description Get Spotify catalog information about an album’s tracks.
      * Optional parameters can be used to limit the number of tracks returned.
      */
@@ -33,7 +33,7 @@ export interface paths {
   "/artists": {
     /**
      * Get Several Artists
-     *  
+     *
      * @description Get Spotify catalog information for several artists based on their Spotify IDs.
      */
     get: operations["get-multiple-artists"];
@@ -41,7 +41,7 @@ export interface paths {
   "/artists/{id}": {
     /**
      * Get Artist
-     *  
+     *
      * @description Get Spotify catalog information for a single artist identified by their unique Spotify ID.
      */
     get: operations["get-an-artist"];
@@ -49,7 +49,7 @@ export interface paths {
   "/artists/{id}/albums": {
     /**
      * Get Artist's Albums
-     *  
+     *
      * @description Get Spotify catalog information about an artist's albums.
      */
     get: operations["get-an-artists-albums"];
@@ -57,7 +57,7 @@ export interface paths {
   "/artists/{id}/related-artists": {
     /**
      * Get Artist's Related Artists
-     *  
+     *
      * @description Get Spotify catalog information about artists similar to a given artist. Similarity is based on analysis of the Spotify community's [listening history](http://news.spotify.com/se/2010/02/03/related-artists/).
      */
     get: operations["get-an-artists-related-artists"];
@@ -65,7 +65,7 @@ export interface paths {
   "/artists/{id}/top-tracks": {
     /**
      * Get Artist's Top Tracks
-     *  
+     *
      * @description Get Spotify catalog information about an artist's top tracks by country.
      */
     get: operations["get-an-artists-top-tracks"];
@@ -73,7 +73,7 @@ export interface paths {
   "/audio-analysis/{id}": {
     /**
      * Get Track's Audio Analysis
-     *  
+     *
      * @description Get a low-level audio analysis for a track in the Spotify catalog. The audio analysis describes the track’s structure and musical content, including rhythm, pitch, and timbre.
      */
     get: operations["get-audio-analysis"];
@@ -81,7 +81,7 @@ export interface paths {
   "/audio-features": {
     /**
      * Get Tracks' Audio Features
-     *  
+     *
      * @description Get audio features for multiple tracks based on their Spotify IDs.
      */
     get: operations["get-several-audio-features"];
@@ -89,7 +89,7 @@ export interface paths {
   "/audio-features/{id}": {
     /**
      * Get Track's Audio Features
-     *  
+     *
      * @description Get audio feature information for a single track identified by its unique
      * Spotify ID.
      */
@@ -98,7 +98,7 @@ export interface paths {
   "/audiobooks": {
     /**
      * Get Several Audiobooks
-     *  
+     *
      * @description Get Spotify catalog information for several audiobooks identified by their Spotify IDs.<br />
      * **Note: Audiobooks are only available for the US, UK, Ireland, New Zealand and Australia markets.**
      */
@@ -107,7 +107,7 @@ export interface paths {
   "/audiobooks/{id}": {
     /**
      * Get an Audiobook
-     *  
+     *
      * @description Get Spotify catalog information for a single audiobook.<br />
      * **Note: Audiobooks are only available for the US, UK, Ireland, New Zealand and Australia markets.**
      */
@@ -116,7 +116,7 @@ export interface paths {
   "/audiobooks/{id}/chapters": {
     /**
      * Get Audiobook Chapters
-     *  
+     *
      * @description Get Spotify catalog information about an audiobook's chapters.<br />
      * **Note: Audiobooks are only available for the US, UK, Ireland, New Zealand and Australia markets.**
      */
@@ -125,7 +125,7 @@ export interface paths {
   "/browse/categories": {
     /**
      * Get Several Browse Categories
-     *  
+     *
      * @description Get a list of categories used to tag items in Spotify (on, for example, the Spotify player’s “Browse” tab).
      */
     get: operations["get-categories"];
@@ -133,7 +133,7 @@ export interface paths {
   "/browse/categories/{category_id}": {
     /**
      * Get Single Browse Category
-     *  
+     *
      * @description Get a single category used to tag items in Spotify (on, for example, the Spotify player’s “Browse” tab).
      */
     get: operations["get-a-category"];
@@ -141,7 +141,7 @@ export interface paths {
   "/browse/categories/{category_id}/playlists": {
     /**
      * Get Category's Playlists
-     *  
+     *
      * @description Get a list of Spotify playlists tagged with a particular category.
      */
     get: operations["get-a-categories-playlists"];
@@ -149,7 +149,7 @@ export interface paths {
   "/browse/featured-playlists": {
     /**
      * Get Featured Playlists
-     *  
+     *
      * @description Get a list of Spotify featured playlists (shown, for example, on a Spotify player's 'Browse' tab).
      */
     get: operations["get-featured-playlists"];
@@ -157,7 +157,7 @@ export interface paths {
   "/browse/new-releases": {
     /**
      * Get New Releases
-     *  
+     *
      * @description Get a list of new album releases featured in Spotify (shown, for example, on a Spotify player’s “Browse” tab).
      */
     get: operations["get-new-releases"];
@@ -165,7 +165,7 @@ export interface paths {
   "/chapters": {
     /**
      * Get Several Chapters
-     *  
+     *
      * @description Get Spotify catalog information for several chapters identified by their Spotify IDs.<br />
      * **Note: Chapters are only available for the US, UK, Ireland, New Zealand and Australia markets.**
      */
@@ -174,7 +174,7 @@ export interface paths {
   "/chapters/{id}": {
     /**
      * Get a Chapter
-     *  
+     *
      * @description Get Spotify catalog information for a single chapter.<br />
      * **Note: Chapters are only available for the US, UK, Ireland, New Zealand and Australia markets.**
      */
@@ -183,7 +183,7 @@ export interface paths {
   "/episodes": {
     /**
      * Get Several Episodes
-     *  
+     *
      * @description Get Spotify catalog information for several episodes based on their Spotify IDs.
      */
     get: operations["get-multiple-episodes"];
@@ -191,7 +191,7 @@ export interface paths {
   "/episodes/{id}": {
     /**
      * Get Episode
-     *  
+     *
      * @description Get Spotify catalog information for a single episode identified by its
      * unique Spotify ID.
      */
@@ -200,7 +200,7 @@ export interface paths {
   "/markets": {
     /**
      * Get Available Markets
-     *  
+     *
      * @description Get the list of markets where Spotify is available.
      */
     get: operations["get-available-markets"];
@@ -208,7 +208,7 @@ export interface paths {
   "/me": {
     /**
      * Get Current User's Profile
-     *  
+     *
      * @description Get detailed profile information about the current user (including the
      * current user's username).
      */
@@ -217,19 +217,19 @@ export interface paths {
   "/me/albums": {
     /**
      * Get User's Saved Albums
-     *  
+     *
      * @description Get a list of the albums saved in the current Spotify user's 'Your Music' library.
      */
     get: operations["get-users-saved-albums"];
     /**
      * Save Albums for Current User
-     *  
+     *
      * @description Save one or more albums to the current user's 'Your Music' library.
      */
     put: operations["save-albums-user"];
     /**
      * Remove Users' Saved Albums
-     *  
+     *
      * @description Remove one or more albums from the current user's 'Your Music' library.
      */
     delete: operations["remove-albums-user"];
@@ -237,7 +237,7 @@ export interface paths {
   "/me/albums/contains": {
     /**
      * Check User's Saved Albums
-     *  
+     *
      * @description Check if one or more albums is already saved in the current Spotify user's 'Your Music' library.
      */
     get: operations["check-users-saved-albums"];
@@ -245,19 +245,19 @@ export interface paths {
   "/me/audiobooks": {
     /**
      * Get User's Saved Audiobooks
-     *  
+     *
      * @description Get a list of the audiobooks saved in the current Spotify user's 'Your Music' library.
      */
     get: operations["get-users-saved-audiobooks"];
     /**
      * Save Audiobooks for Current User
-     *  
+     *
      * @description Save one or more audiobooks to the current Spotify user's library.
      */
     put: operations["save-audiobooks-user"];
     /**
      * Remove User's Saved Audiobooks
-     *  
+     *
      * @description Remove one or more audiobooks from the Spotify user's library.
      */
     delete: operations["remove-audiobooks-user"];
@@ -265,7 +265,7 @@ export interface paths {
   "/me/audiobooks/contains": {
     /**
      * Check User's Saved Audiobooks
-     *  
+     *
      * @description Check if one or more audiobooks are already saved in the current Spotify user's library.
      */
     get: operations["check-users-saved-audiobooks"];
@@ -273,21 +273,21 @@ export interface paths {
   "/me/episodes": {
     /**
      * Get User's Saved Episodes
-     *  
+     *
      * @description Get a list of the episodes saved in the current Spotify user's library.<br/>
      * This API endpoint is in __beta__ and could change without warning. Please share any feedback that you have, or issues that you discover, in our [developer community forum](https://community.spotify.com/t5/Spotify-for-Developers/bd-p/Spotify_Developer).
      */
     get: operations["get-users-saved-episodes"];
     /**
      * Save Episodes for Current User
-     *  
+     *
      * @description Save one or more episodes to the current user's library.<br/>
      * This API endpoint is in __beta__ and could change without warning. Please share any feedback that you have, or issues that you discover, in our [developer community forum](https://community.spotify.com/t5/Spotify-for-Developers/bd-p/Spotify_Developer).
      */
     put: operations["save-episodes-user"];
     /**
      * Remove User's Saved Episodes
-     *  
+     *
      * @description Remove one or more episodes from the current user's library.<br/>
      * This API endpoint is in __beta__ and could change without warning. Please share any feedback that you have, or issues that you discover, in our [developer community forum](https://community.spotify.com/t5/Spotify-for-Developers/bd-p/Spotify_Developer).
      */
@@ -296,7 +296,7 @@ export interface paths {
   "/me/episodes/contains": {
     /**
      * Check User's Saved Episodes
-     *  
+     *
      * @description Check if one or more episodes is already saved in the current Spotify user's 'Your Episodes' library.<br/>
      * This API endpoint is in __beta__ and could change without warning. Please share any feedback that you have, or issues that you discover, in our [developer community forum](https://community.spotify.com/t5/Spotify-for-Developers/bd-p/Spotify_Developer)..
      */
@@ -305,19 +305,19 @@ export interface paths {
   "/me/following": {
     /**
      * Get Followed Artists
-     *  
+     *
      * @description Get the current user's followed artists.
      */
     get: operations["get-followed"];
     /**
      * Follow Artists or Users
-     *  
+     *
      * @description Add the current user as a follower of one or more artists or other Spotify users.
      */
     put: operations["follow-artists-users"];
     /**
      * Unfollow Artists or Users
-     *  
+     *
      * @description Remove the current user as a follower of one or more artists or other Spotify users.
      */
     delete: operations["unfollow-artists-users"];
@@ -325,7 +325,7 @@ export interface paths {
   "/me/following/contains": {
     /**
      * Check If User Follows Artists or Users
-     *  
+     *
      * @description Check to see if the current user is following one or more artists or other Spotify users.
      */
     get: operations["check-current-user-follows"];
@@ -333,13 +333,13 @@ export interface paths {
   "/me/player": {
     /**
      * Get Playback State
-     *  
+     *
      * @description Get information about the user’s current playback state, including track or episode, progress, and active device.
      */
     get: operations["get-information-about-the-users-current-playback"];
     /**
      * Transfer Playback
-     *  
+     *
      * @description Transfer playback to a new device and determine if it should start playing.
      */
     put: operations["transfer-a-users-playback"];
@@ -347,7 +347,7 @@ export interface paths {
   "/me/player/currently-playing": {
     /**
      * Get Currently Playing Track
-     *  
+     *
      * @description Get the object currently being played on the user's Spotify account.
      */
     get: operations["get-the-users-currently-playing-track"];
@@ -355,7 +355,7 @@ export interface paths {
   "/me/player/devices": {
     /**
      * Get Available Devices
-     *  
+     *
      * @description Get information about a user’s available devices.
      */
     get: operations["get-a-users-available-devices"];
@@ -363,7 +363,7 @@ export interface paths {
   "/me/player/next": {
     /**
      * Skip To Next
-     *  
+     *
      * @description Skips to next track in the user’s queue.
      */
     post: operations["skip-users-playback-to-next-track"];
@@ -371,7 +371,7 @@ export interface paths {
   "/me/player/pause": {
     /**
      * Pause Playback
-     *  
+     *
      * @description Pause playback on the user's account.
      */
     put: operations["pause-a-users-playback"];
@@ -379,7 +379,7 @@ export interface paths {
   "/me/player/play": {
     /**
      * Start/Resume Playback
-     *  
+     *
      * @description Start a new context or resume current playback on the user's active device.
      */
     put: operations["start-a-users-playback"];
@@ -387,7 +387,7 @@ export interface paths {
   "/me/player/previous": {
     /**
      * Skip To Previous
-     *  
+     *
      * @description Skips to previous track in the user’s queue.
      */
     post: operations["skip-users-playback-to-previous-track"];
@@ -395,13 +395,13 @@ export interface paths {
   "/me/player/queue": {
     /**
      * Get the User's Queue
-     *  
+     *
      * @description Get the list of objects that make up the user's queue.
      */
     get: operations["get-queue"];
     /**
      * Add Item to Playback Queue
-     *  
+     *
      * @description Add an item to the end of the user's current playback queue.
      */
     post: operations["add-to-queue"];
@@ -409,7 +409,7 @@ export interface paths {
   "/me/player/recently-played": {
     /**
      * Get Recently Played Tracks
-     *  
+     *
      * @description Get tracks from the current user's recently played tracks.
      * _**Note**: Currently doesn't support podcast episodes._
      */
@@ -418,7 +418,7 @@ export interface paths {
   "/me/player/repeat": {
     /**
      * Set Repeat Mode
-     *  
+     *
      * @description Set the repeat mode for the user's playback. Options are repeat-track,
      * repeat-context, and off.
      */
@@ -427,7 +427,7 @@ export interface paths {
   "/me/player/seek": {
     /**
      * Seek To Position
-     *  
+     *
      * @description Seeks to the given position in the user’s currently playing track.
      */
     put: operations["seek-to-position-in-currently-playing-track"];
@@ -435,7 +435,7 @@ export interface paths {
   "/me/player/shuffle": {
     /**
      * Toggle Playback Shuffle
-     *  
+     *
      * @description Toggle shuffle on or off for user’s playback.
      */
     put: operations["toggle-shuffle-for-users-playback"];
@@ -443,7 +443,7 @@ export interface paths {
   "/me/player/volume": {
     /**
      * Set Playback Volume
-     *  
+     *
      * @description Set the volume for the user’s current playback device.
      */
     put: operations["set-volume-for-users-playback"];
@@ -451,7 +451,7 @@ export interface paths {
   "/me/playlists": {
     /**
      * Get Current User's Playlists
-     *  
+     *
      * @description Get a list of the playlists owned or followed by the current Spotify
      * user.
      */
@@ -460,19 +460,19 @@ export interface paths {
   "/me/shows": {
     /**
      * Get User's Saved Shows
-     *  
+     *
      * @description Get a list of shows saved in the current Spotify user's library. Optional parameters can be used to limit the number of shows returned.
      */
     get: operations["get-users-saved-shows"];
     /**
      * Save Shows for Current User
-     *  
+     *
      * @description Save one or more shows to current Spotify user's library.
      */
     put: operations["save-shows-user"];
     /**
      * Remove User's Saved Shows
-     *  
+     *
      * @description Delete one or more shows from current Spotify user's library.
      */
     delete: operations["remove-shows-user"];
@@ -480,7 +480,7 @@ export interface paths {
   "/me/shows/contains": {
     /**
      * Check User's Saved Shows
-     *  
+     *
      * @description Check if one or more shows is already saved in the current Spotify user's library.
      */
     get: operations["check-users-saved-shows"];
@@ -488,7 +488,7 @@ export interface paths {
   "/me/top/artists": {
     /**
      * Get User's Top Artists
-     *  
+     *
      * @description Get the current user's top artists based on calculated affinity.
      */
     get: operations["get-users-top-artists"];
@@ -496,7 +496,7 @@ export interface paths {
   "/me/top/tracks": {
     /**
      * Get User's Top Tracks
-     *  
+     *
      * @description Get the current user's top tracks based on calculated affinity.
      */
     get: operations["get-users-top-tracks"];
@@ -504,19 +504,19 @@ export interface paths {
   "/me/tracks": {
     /**
      * Get User's Saved Tracks
-     *  
+     *
      * @description Get a list of the songs saved in the current Spotify user's 'Your Music' library.
      */
     get: operations["get-users-saved-tracks"];
     /**
      * Save Tracks for Current User
-     *  
+     *
      * @description Save one or more tracks to the current user's 'Your Music' library.
      */
     put: operations["save-tracks-user"];
     /**
      * Remove User's Saved Tracks
-     *  
+     *
      * @description Remove one or more tracks from the current user's 'Your Music' library.
      */
     delete: operations["remove-tracks-user"];
@@ -524,7 +524,7 @@ export interface paths {
   "/me/tracks/contains": {
     /**
      * Check User's Saved Tracks
-     *  
+     *
      * @description Check if one or more tracks is already saved in the current Spotify user's 'Your Music' library.
      */
     get: operations["check-users-saved-tracks"];
@@ -532,13 +532,13 @@ export interface paths {
   "/playlists/{playlist_id}": {
     /**
      * Get Playlist
-     *  
+     *
      * @description Get a playlist owned by a Spotify user.
      */
     get: operations["get-playlist"];
     /**
      * Change Playlist Details
-     *  
+     *
      * @description Change a playlist's name and public/private state. (The user must, of
      * course, own the playlist.)
      */
@@ -547,13 +547,13 @@ export interface paths {
   "/playlists/{playlist_id}/followers": {
     /**
      * Follow Playlist
-     *  
+     *
      * @description Add the current user as a follower of a playlist.
      */
     put: operations["follow-playlist"];
     /**
      * Unfollow Playlist
-     *  
+     *
      * @description Remove the current user as a follower of a playlist.
      */
     delete: operations["unfollow-playlist"];
@@ -561,7 +561,7 @@ export interface paths {
   "/playlists/{playlist_id}/followers/contains": {
     /**
      * Check if Users Follow Playlist
-     *  
+     *
      * @description Check to see if one or more Spotify users are following a specified playlist.
      */
     get: operations["check-if-user-follows-playlist"];
@@ -569,13 +569,13 @@ export interface paths {
   "/playlists/{playlist_id}/images": {
     /**
      * Get Playlist Cover Image
-     *  
+     *
      * @description Get the current image associated with a specific playlist.
      */
     get: operations["get-playlist-cover"];
     /**
      * Add Custom Playlist Cover Image
-     *  
+     *
      * @description Replace the image used to represent a specific playlist.
      */
     put: operations["upload-custom-playlist-cover"];
@@ -583,13 +583,13 @@ export interface paths {
   "/playlists/{playlist_id}/tracks": {
     /**
      * Get Playlist Items
-     *  
+     *
      * @description Get full details of the items of a playlist owned by a Spotify user.
      */
     get: operations["get-playlists-tracks"];
     /**
      * Update Playlist Items
-     *  
+     *
      * @description Either reorder or replace items in a playlist depending on the request's parameters.
      * To reorder items, include `range_start`, `insert_before`, `range_length` and `snapshot_id` in the request's body.
      * To replace items, include `uris` as either a query parameter or in the request's body.
@@ -601,13 +601,13 @@ export interface paths {
     put: operations["reorder-or-replace-playlists-tracks"];
     /**
      * Add Items to Playlist
-     *  
+     *
      * @description Add one or more items to a user's playlist.
      */
     post: operations["add-tracks-to-playlist"];
     /**
      * Remove Playlist Items
-     *  
+     *
      * @description Remove one or more items from a user's playlist.
      */
     delete: operations["remove-tracks-playlist"];
@@ -615,9 +615,9 @@ export interface paths {
   "/recommendations": {
     /**
      * Get Recommendations
-     *  
+     *
      * @description Recommendations are generated based on the available information for a given seed entity and matched against similar artists and tracks. If there is sufficient information about the provided seeds, a list of tracks will be returned together with pool size details.
-     * 
+     *
      * For artists and tracks that are very new or obscure there might not be enough data to generate a list of tracks.
      */
     get: operations["get-recommendations"];
@@ -625,7 +625,7 @@ export interface paths {
   "/recommendations/available-genre-seeds": {
     /**
      * Get Available Genre Seeds
-     *  
+     *
      * @description Retrieve a list of available genres seed parameter values for [recommendations](/documentation/web-api/reference/get-recommendations).
      */
     get: operations["get-recommendation-genres"];
@@ -633,7 +633,7 @@ export interface paths {
   "/search": {
     /**
      * Search for Item
-     *  
+     *
      * @description Get Spotify catalog information about albums, artists, playlists, tracks, shows, episodes or audiobooks
      * that match a keyword string.<br />
      * **Note: Audiobooks are only available for the US, UK, Ireland, New Zealand and Australia markets.**
@@ -643,7 +643,7 @@ export interface paths {
   "/shows": {
     /**
      * Get Several Shows
-     *  
+     *
      * @description Get Spotify catalog information for several shows based on their Spotify IDs.
      */
     get: operations["get-multiple-shows"];
@@ -651,7 +651,7 @@ export interface paths {
   "/shows/{id}": {
     /**
      * Get Show
-     *  
+     *
      * @description Get Spotify catalog information for a single show identified by its
      * unique Spotify ID.
      */
@@ -660,7 +660,7 @@ export interface paths {
   "/shows/{id}/episodes": {
     /**
      * Get Show Episodes
-     *  
+     *
      * @description Get Spotify catalog information about an show’s episodes. Optional parameters can be used to limit the number of episodes returned.
      */
     get: operations["get-a-shows-episodes"];
@@ -668,7 +668,7 @@ export interface paths {
   "/tracks": {
     /**
      * Get Several Tracks
-     *  
+     *
      * @description Get Spotify catalog information for multiple tracks based on their Spotify IDs.
      */
     get: operations["get-several-tracks"];
@@ -676,7 +676,7 @@ export interface paths {
   "/tracks/{id}": {
     /**
      * Get Track
-     *  
+     *
      * @description Get Spotify catalog information for a single track identified by its
      * unique Spotify ID.
      */
@@ -685,7 +685,7 @@ export interface paths {
   "/users/{user_id}": {
     /**
      * Get User's Profile
-     *  
+     *
      * @description Get public profile information about a Spotify user.
      */
     get: operations["get-users-profile"];
@@ -693,13 +693,13 @@ export interface paths {
   "/users/{user_id}/playlists": {
     /**
      * Get User's Playlists
-     *  
+     *
      * @description Get a list of the playlists owned or followed by a Spotify user.
      */
     get: operations["get-list-users-playlists"];
     /**
      * Create Playlist
-     *  
+     *
      * @description Create a playlist for a Spotify user. (The playlist will be empty until
      * you [add tracks](/documentation/web-api/reference/add-tracks-to-playlist).)
      */
@@ -714,77 +714,77 @@ export interface components {
     AlbumBase: {
       /**
        * @description The type of the album.
-       *  
-       * @example compilation 
+       *
+       * @example compilation
        * @enum {string}
        */
       album_type: "album" | "single" | "compilation";
       /**
        * @description The markets in which the album is available: [ISO 3166-1 alpha-2 country codes](http://en.wikipedia.org/wiki/ISO_3166-1_alpha-2). _**NOTE**: an album is considered available in a market when at least 1 of its tracks is available in that market._
-       *  
+       *
        * @example [
        *   "CA",
        *   "BR",
        *   "IT"
        * ]
        */
-      available_markets: (string)[];
+      available_markets: string[];
       /** @description Known external URLs for this album. */
       external_urls: components["schemas"]["ExternalUrlObject"];
       /** @description A link to the Web API endpoint providing full details of the album. */
       href: string;
       /**
        * @description The [Spotify ID](/documentation/web-api/concepts/spotify-uris-ids) for the album.
-       *  
+       *
        * @example 2up3OPMp9Tb4dAKM2erWXQ
        */
       id: string;
       /** @description The cover art for the album in various sizes, widest first. */
-      images: (components["schemas"]["ImageObject"])[];
+      images: components["schemas"]["ImageObject"][];
       /** @description The name of the album. In case of an album takedown, the value may be an empty string. */
       name: string;
       /**
        * @description The date the album was first released.
-       *  
+       *
        * @example 1981-12
        */
       release_date: string;
       /**
        * @description The precision with which `release_date` value is known.
-       *  
-       * @example year 
+       *
+       * @example year
        * @enum {string}
        */
       release_date_precision: "year" | "month" | "day";
       /** @description Included in the response when a content restriction is applied. */
       restrictions?: components["schemas"]["AlbumRestrictionObject"];
       /**
-       * @description The number of tracks in the album. 
+       * @description The number of tracks in the album.
        * @example 9
        */
       total_tracks: number;
       /**
        * @description The object type.
-       *  
+       *
        * @enum {string}
        */
       type: "album";
       /**
        * @description The [Spotify URI](/documentation/web-api/concepts/spotify-uris-ids) for the album.
-       *  
+       *
        * @example spotify:album:2up3OPMp9Tb4dAKM2erWXQ
        */
       uri: string;
     };
     AlbumObject: components["schemas"]["AlbumBase"] & {
       /** @description The artists of the album. Each artist object includes a link in `href` to more detailed information about the artist. */
-      artists?: (components["schemas"]["SimplifiedArtistObject"])[];
+      artists?: components["schemas"]["SimplifiedArtistObject"][];
       /** @description The copyright statements of the album. */
-      copyrights?: (components["schemas"]["CopyrightObject"])[];
+      copyrights?: components["schemas"]["CopyrightObject"][];
       /** @description Known external IDs for the album. */
       external_ids?: components["schemas"]["ExternalIdObject"];
       /** @description A list of the genres used to classify the album. (If not yet classified, the array is empty.) */
-      genres?: (string)[];
+      genres?: string[];
       /** @description The label for the album. */
       label?: string;
       /** @description The popularity of the album, with 100 being the most popular. The popularity is calculated from the popularity of the album's individual tracks. */
@@ -796,7 +796,7 @@ export interface components {
       /**
        * @description The reason for the restriction. Albums may be restricted if the content is not available in a given market, to the user's subscription type, or when the user's account is set to not play explicit content.
        * Additional reasons may be added in the future.
-       *  
+       *
        * @enum {string}
        */
       reason?: "market" | "product" | "explicit";
@@ -808,26 +808,26 @@ export interface components {
       followers?: components["schemas"]["FollowersObject"];
       /**
        * @description A list of the genres the artist is associated with. If not yet classified, the array is empty.
-       *  
+       *
        * @example [
        *   "Prog rock",
        *   "Grunge"
        * ]
        */
-      genres?: (string)[];
+      genres?: string[];
       /** @description A link to the Web API endpoint providing full details of the artist. */
       href?: string;
       /** @description The [Spotify ID](/documentation/web-api/concepts/spotify-uris-ids) for the artist. */
       id?: string;
       /** @description Images of the artist in various sizes, widest first. */
-      images?: (components["schemas"]["ImageObject"])[];
+      images?: components["schemas"]["ImageObject"][];
       /** @description The name of the artist. */
       name?: string;
       /** @description The popularity of the artist. The value will be between 0 and 100, with 100 being the most popular. The artist's popularity is calculated from the popularity of all the artist's tracks. */
       popularity?: number;
       /**
        * @description The object type.
-       *  
+       *
        * @enum {string}
        */
       type?: "artist";
@@ -836,112 +836,112 @@ export interface components {
     };
     AudioAnalysisObject: {
       /** @description The time intervals of the bars throughout the track. A bar (or measure) is a segment of time defined as a given number of beats. */
-      bars?: (components["schemas"]["TimeIntervalObject"])[];
+      bars?: components["schemas"]["TimeIntervalObject"][];
       /** @description The time intervals of beats throughout the track. A beat is the basic time unit of a piece of music; for example, each tick of a metronome. Beats are typically multiples of tatums. */
-      beats?: (components["schemas"]["TimeIntervalObject"])[];
+      beats?: components["schemas"]["TimeIntervalObject"][];
       meta?: {
         /**
-         * @description The amount of time taken to analyze this track. 
+         * @description The amount of time taken to analyze this track.
          * @example 6.93906
          */
         analysis_time?: number;
         /**
-         * @description The version of the Analyzer used to analyze this track. 
+         * @description The version of the Analyzer used to analyze this track.
          * @example 4.0.0
          */
         analyzer_version?: string;
         /**
-         * @description A detailed status code for this track. If analysis data is missing, this code may explain why. 
+         * @description A detailed status code for this track. If analysis data is missing, this code may explain why.
          * @example OK
          */
         detailed_status?: string;
         /**
-         * @description The method used to read the track's audio data. 
+         * @description The method used to read the track's audio data.
          * @example libvorbisfile L+R 44100->22050
          */
         input_process?: string;
         /**
-         * @description The platform used to read the track's audio data. 
+         * @description The platform used to read the track's audio data.
          * @example Linux
          */
         platform?: string;
         /**
-         * @description The return code of the analyzer process. 0 if successful, 1 if any errors occurred. 
+         * @description The return code of the analyzer process. 0 if successful, 1 if any errors occurred.
          * @example 0
          */
         status_code?: number;
         /**
-         * @description The Unix timestamp (in seconds) at which this track was analyzed. 
+         * @description The Unix timestamp (in seconds) at which this track was analyzed.
          * @example 1495193577
          */
         timestamp?: number;
       };
       /** @description Sections are defined by large variations in rhythm or timbre, e.g. chorus, verse, bridge, guitar solo, etc. Each section contains its own descriptions of tempo, key, mode, time_signature, and loudness. */
-      sections?: (components["schemas"]["SectionObject"])[];
+      sections?: components["schemas"]["SectionObject"][];
       /** @description Each segment contains a roughly conisistent sound throughout its duration. */
-      segments?: (components["schemas"]["SegmentObject"])[];
+      segments?: components["schemas"]["SegmentObject"][];
       /** @description A tatum represents the lowest regular pulse train that a listener intuitively infers from the timing of perceived musical events (segments). */
-      tatums?: (components["schemas"]["TimeIntervalObject"])[];
+      tatums?: components["schemas"]["TimeIntervalObject"][];
       track?: {
         /**
-         * @description The number of channels used for analysis. If 1, all channels are summed together to mono before analysis. 
+         * @description The number of channels used for analysis. If 1, all channels are summed together to mono before analysis.
          * @example 1
          */
         analysis_channels?: number;
         /**
-         * @description The sample rate used to decode and analyze this track. May differ from the actual sample rate of this track available on Spotify. 
+         * @description The sample rate used to decode and analyze this track. May differ from the actual sample rate of this track available on Spotify.
          * @example 22050
          */
         analysis_sample_rate?: number;
         /**
-         * @description A version number for the Echo Nest Musical Fingerprint format used in the codestring field. 
+         * @description A version number for the Echo Nest Musical Fingerprint format used in the codestring field.
          * @example 3.15
          */
         code_version?: number;
         /** @description An [Echo Nest Musical Fingerprint (ENMFP)](https://academiccommons.columbia.edu/doi/10.7916/D8Q248M4) codestring for this track. */
         codestring?: string;
         /**
-         * @description Length of the track in seconds. 
+         * @description Length of the track in seconds.
          * @example 207.95985
          */
         duration?: number;
         /**
-         * @description A version number for the EchoPrint format used in the echoprintstring field. 
+         * @description A version number for the EchoPrint format used in the echoprintstring field.
          * @example 4.15
          */
         echoprint_version?: number;
         /** @description An [EchoPrint](https://github.com/spotify/echoprint-codegen) codestring for this track. */
         echoprintstring?: string;
         /**
-         * @description The time, in seconds, at which the track's fade-in period ends. If the track has no fade-in, this will be 0.0. 
+         * @description The time, in seconds, at which the track's fade-in period ends. If the track has no fade-in, this will be 0.0.
          * @example 0
          */
         end_of_fade_in?: number;
         key?: components["schemas"]["Key"];
         /**
-         * @description The confidence, from 0.0 to 1.0, of the reliability of the `key`. 
+         * @description The confidence, from 0.0 to 1.0, of the reliability of the `key`.
          * @example 0.408
          */
         key_confidence?: number;
         loudness?: components["schemas"]["Loudness"];
         mode?: components["schemas"]["Mode"];
         /**
-         * @description The confidence, from 0.0 to 1.0, of the reliability of the `mode`. 
+         * @description The confidence, from 0.0 to 1.0, of the reliability of the `mode`.
          * @example 0.485
          */
         mode_confidence?: number;
         /**
-         * @description The exact number of audio samples analyzed from this track. See also `analysis_sample_rate`. 
+         * @description The exact number of audio samples analyzed from this track. See also `analysis_sample_rate`.
          * @example 4585515
          */
         num_samples?: number;
         /**
-         * @description An offset to the start of the region of the track that was analyzed. (As the entire track is analyzed, this should always be 0.) 
+         * @description An offset to the start of the region of the track that was analyzed. (As the entire track is analyzed, this should always be 0.)
          * @example 0
          */
         offset_seconds?: number;
         /**
-         * @description A version number for the Rhythmstring used in the rhythmstring field. 
+         * @description A version number for the Rhythmstring used in the rhythmstring field.
          * @example 1
          */
         rhythm_version?: number;
@@ -950,12 +950,12 @@ export interface components {
         /** @description This field will always contain the empty string. */
         sample_md5?: string;
         /**
-         * @description The time, in seconds, at which the track's fade-out period starts. If the track has no fade-out, this should match the track's length. 
+         * @description The time, in seconds, at which the track's fade-out period starts. If the track has no fade-out, this should match the track's length.
          * @example 201.13705
          */
         start_of_fade_out?: number;
         /**
-         * @description A version number for the Synchstring used in the synchstring field. 
+         * @description A version number for the Synchstring used in the synchstring field.
          * @example 1
          */
         synch_version?: number;
@@ -963,18 +963,18 @@ export interface components {
         synchstring?: string;
         tempo?: components["schemas"]["Tempo"];
         /**
-         * @description The confidence, from 0.0 to 1.0, of the reliability of the `tempo`. 
+         * @description The confidence, from 0.0 to 1.0, of the reliability of the `tempo`.
          * @example 0.73
          */
         tempo_confidence?: number;
         time_signature?: components["schemas"]["TimeSignature"];
         /**
-         * @description The confidence, from 0.0 to 1.0, of the reliability of the `time_signature`. 
+         * @description The confidence, from 0.0 to 1.0, of the reliability of the `time_signature`.
          * @example 0.994
          */
         time_signature_confidence?: number;
         /**
-         * @description The length of the region of the track was analyzed, if a subset of the track was analyzed. (As the entire track is analyzed, this should always be 0.) 
+         * @description The length of the region of the track was analyzed, if a subset of the track was analyzed. (As the entire track is analyzed, this should always be 0.)
          * @example 0
          */
         window_seconds?: number;
@@ -982,65 +982,65 @@ export interface components {
     };
     AudioFeaturesObject: {
       /**
-       * Format: float 
+       * Format: float
        * @description A confidence measure from 0.0 to 1.0 of whether the track is acoustic. 1.0 represents high confidence the track is acoustic.
-       *  
+       *
        * @example 0.00242
        */
       acousticness?: number;
       /**
        * @description A URL to access the full audio analysis of this track. An access token is required to access this data.
-       *  
+       *
        * @example https://api.spotify.com/v1/audio-analysis/2takcwOaAZWiXQijPHIx7B
        */
       analysis_url?: string;
       /**
-       * Format: float 
+       * Format: float
        * @description Danceability describes how suitable a track is for dancing based on a combination of musical elements including tempo, rhythm stability, beat strength, and overall regularity. A value of 0.0 is least danceable and 1.0 is most danceable.
-       *  
+       *
        * @example 0.585
        */
       danceability?: number;
       /**
        * @description The duration of the track in milliseconds.
-       *  
+       *
        * @example 237040
        */
       duration_ms?: number;
       /**
-       * Format: float 
+       * Format: float
        * @description Energy is a measure from 0.0 to 1.0 and represents a perceptual measure of intensity and activity. Typically, energetic tracks feel fast, loud, and noisy. For example, death metal has high energy, while a Bach prelude scores low on the scale. Perceptual features contributing to this attribute include dynamic range, perceived loudness, timbre, onset rate, and general entropy.
-       *  
+       *
        * @example 0.842
        */
       energy?: number;
       /**
        * @description The Spotify ID for the track.
-       *  
+       *
        * @example 2takcwOaAZWiXQijPHIx7B
        */
       id?: string;
       /**
-       * Format: float 
+       * Format: float
        * @description Predicts whether a track contains no vocals. "Ooh" and "aah" sounds are treated as instrumental in this context. Rap or spoken word tracks are clearly "vocal". The closer the instrumentalness value is to 1.0, the greater likelihood the track contains no vocal content. Values above 0.5 are intended to represent instrumental tracks, but confidence is higher as the value approaches 1.0.
-       *  
+       *
        * @example 0.00686
        */
       instrumentalness?: number;
       key?: components["schemas"]["Key"];
       /**
-       * Format: float 
+       * Format: float
        * @description Detects the presence of an audience in the recording. Higher liveness values represent an increased probability that the track was performed live. A value above 0.8 provides strong likelihood that the track is live.
-       *  
+       *
        * @example 0.0866
        */
       liveness?: number;
       loudness?: components["schemas"]["Loudness"];
       mode?: components["schemas"]["Mode"];
       /**
-       * Format: float 
+       * Format: float
        * @description Speechiness detects the presence of spoken words in a track. The more exclusively speech-like the recording (e.g. talk show, audio book, poetry), the closer to 1.0 the attribute value. Values above 0.66 describe tracks that are probably made entirely of spoken words. Values between 0.33 and 0.66 describe tracks that may contain both music and speech, either in sections or layered, including such cases as rap music. Values below 0.33 most likely represent music and other non-speech-like tracks.
-       *  
+       *
        * @example 0.0556
        */
       speechiness?: number;
@@ -1048,42 +1048,42 @@ export interface components {
       time_signature?: components["schemas"]["TimeSignature"];
       /**
        * @description A link to the Web API endpoint providing full details of the track.
-       *  
+       *
        * @example https://api.spotify.com/v1/tracks/2takcwOaAZWiXQijPHIx7B
        */
       track_href?: string;
       /**
        * @description The object type.
-       *  
+       *
        * @enum {string}
        */
       type?: "audio_features";
       /**
        * @description The Spotify URI for the track.
-       *  
+       *
        * @example spotify:track:2takcwOaAZWiXQijPHIx7B
        */
       uri?: string;
       /**
-       * Format: float 
+       * Format: float
        * @description A measure from 0.0 to 1.0 describing the musical positiveness conveyed by a track. Tracks with high valence sound more positive (e.g. happy, cheerful, euphoric), while tracks with low valence sound more negative (e.g. sad, depressed, angry).
-       *  
+       *
        * @example 0.428
        */
       valence?: number;
     };
     AudiobookBase: {
       /** @description The author(s) for the audiobook. */
-      authors: (components["schemas"]["AuthorObject"])[];
+      authors: components["schemas"]["AuthorObject"][];
       /** @description A list of the countries in which the audiobook can be played, identified by their [ISO 3166-1 alpha-2](http://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) code. */
-      available_markets: (string)[];
+      available_markets: string[];
       /** @description The copyright statements of the audiobook. */
-      copyrights: (components["schemas"]["CopyrightObject"])[];
+      copyrights: components["schemas"]["CopyrightObject"][];
       /** @description A description of the audiobook. HTML tags are stripped away from this field, use `html_description` field in case HTML tags are needed. */
       description: string;
       /**
        * @description The edition of the audiobook.
-       *  
+       *
        * @example Unabridged
        */
       edition?: string;
@@ -1098,22 +1098,22 @@ export interface components {
       /** @description The [Spotify ID](/documentation/web-api/concepts/spotify-uris-ids) for the audiobook. */
       id: string;
       /** @description The cover art for the audiobook in various sizes, widest first. */
-      images: (components["schemas"]["ImageObject"])[];
+      images: components["schemas"]["ImageObject"][];
       /** @description A list of the languages used in the audiobook, identified by their [ISO 639](https://en.wikipedia.org/wiki/ISO_639) code. */
-      languages: (string)[];
+      languages: string[];
       /** @description The media type of the audiobook. */
       media_type: string;
       /** @description The name of the audiobook. */
       name: string;
       /** @description The narrator(s) for the audiobook. */
-      narrators: (components["schemas"]["NarratorObject"])[];
+      narrators: components["schemas"]["NarratorObject"][];
       /** @description The publisher of the audiobook. */
       publisher: string;
       /** @description The number of chapters in this audiobook. */
       total_chapters: number;
       /**
        * @description The object type.
-       *  
+       *
        * @enum {string}
        */
       type: "audiobook";
@@ -1132,16 +1132,16 @@ export interface components {
       /** @description A link to the Web API endpoint returning full details of the category. */
       href: string;
       /** @description The category icon, in various sizes. */
-      icons: (components["schemas"]["ImageObject"])[];
+      icons: components["schemas"]["ImageObject"][];
       /**
        * @description The [Spotify category ID](/documentation/web-api/concepts/spotify-uris-ids) of the category.
-       *  
+       *
        * @example equal
        */
       id: string;
       /**
        * @description The name of the category.
-       *  
+       *
        * @example EQUAL
        */
       name: string;
@@ -1149,27 +1149,27 @@ export interface components {
     ChapterBase: {
       /**
        * @description A URL to a 30 second preview (MP3 format) of the episode. `null` if not available.
-       *  
+       *
        * @example https://p.scdn.co/mp3-preview/2f37da1d4221f40b9d1a98cd191f4d6f1646ad17
        */
       audio_preview_url: string;
       /** @description A list of the countries in which the chapter can be played, identified by their [ISO 3166-1 alpha-2](http://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) code. */
-      available_markets?: (string)[];
+      available_markets?: string[];
       /**
        * @description The number of the chapter
-       *  
+       *
        * @example 1
        */
       chapter_number: number;
       /**
        * @description A description of the episode. HTML tags are stripped away from this field, use `html_description` field in case HTML tags are needed.
-       *  
+       *
        * @example A Spotify podcast sharing fresh insights on important topics of the moment—in a way only Spotify can. You’ll hear from experts in the music, podcast and tech industries as we discover and uncover stories about our work and the world around us.
        */
       description: string;
       /**
        * @description The episode length in milliseconds.
-       *  
+       *
        * @example 1686230
        */
       duration_ms: number;
@@ -1179,51 +1179,51 @@ export interface components {
       external_urls: components["schemas"]["ExternalUrlObject"];
       /**
        * @description A link to the Web API endpoint providing full details of the episode.
-       *  
+       *
        * @example https://api.spotify.com/v1/episodes/5Xt5DXGzch68nYYamXrNxZ
        */
       href: string;
       /**
        * @description A description of the episode. This field may contain HTML tags.
-       *  
+       *
        * @example <p>A Spotify podcast sharing fresh insights on important topics of the moment—in a way only Spotify can. You’ll hear from experts in the music, podcast and tech industries as we discover and uncover stories about our work and the world around us.</p>
        */
       html_description: string;
       /**
        * @description The [Spotify ID](/documentation/web-api/concepts/spotify-uris-ids) for the episode.
-       *  
+       *
        * @example 5Xt5DXGzch68nYYamXrNxZ
        */
       id: string;
       /** @description The cover art for the episode in various sizes, widest first. */
-      images: (components["schemas"]["ImageObject"])[];
+      images: components["schemas"]["ImageObject"][];
       /** @description True if the episode is playable in the given market. Otherwise false. */
       is_playable: boolean;
       /**
        * @description A list of the languages used in the episode, identified by their [ISO 639-1](https://en.wikipedia.org/wiki/ISO_639) code.
-       *  
+       *
        * @example [
        *   "fr",
        *   "en"
        * ]
        */
-      languages: (string)[];
+      languages: string[];
       /**
        * @description The name of the episode.
-       *  
+       *
        * @example Starting Your Own Podcast: Tips, Tricks, and Advice From Anchor Creators
        */
       name: string;
       /**
        * @description The date the episode was first released, for example `"1981-12-15"`. Depending on the precision, it might be shown as `"1981"` or `"1981-12"`.
-       *  
+       *
        * @example "1981-12-15T00:00:00.000Z"
        */
       release_date: string;
       /**
        * @description The precision with which `release_date` value is known.
-       *  
-       * @example day 
+       *
+       * @example day
        * @enum {string}
        */
       release_date_precision: "year" | "month" | "day";
@@ -1233,13 +1233,13 @@ export interface components {
       resume_point: components["schemas"]["ResumePointObject"];
       /**
        * @description The object type.
-       *  
+       *
        * @enum {string}
        */
       type: "episode";
       /**
        * @description The [Spotify URI](/documentation/web-api/concepts/spotify-uris-ids) for the episode.
-       *  
+       *
        * @example spotify:episode:0zLhl3WsOCQHbe1BPTiHgr
        */
       uri: string;
@@ -1255,7 +1255,7 @@ export interface components {
        * - `product` - The content item is not available for the user's subscription type.
        * - `explicit` - The content item is explicit and the user's account is set to not play explicit content.
        * - `payment_required` - Payment is required to play the content item.
-       * 
+       *
        * Additional reasons may be added in the future.
        * **Note**: If you use this field, make sure that your application safely handles unknown values.
        */
@@ -1332,10 +1332,10 @@ export interface components {
       total?: number;
     };
     CursorPagingPlayHistoryObject: components["schemas"]["CursorPagingObject"] & {
-      items?: (components["schemas"]["PlayHistoryObject"])[];
+      items?: components["schemas"]["PlayHistoryObject"][];
     };
     CursorPagingSimplifiedArtistObject: components["schemas"]["CursorPagingObject"] & {
-      items?: (components["schemas"]["ArtistObject"])[];
+      items?: components["schemas"]["ArtistObject"][];
     };
     DeviceObject: {
       /** @description The device ID. */
@@ -1347,24 +1347,24 @@ export interface components {
       /** @description Whether controlling this device is restricted. At present if this is "true" then no Web API commands will be accepted by this device. */
       is_restricted?: boolean;
       /**
-       * @description A human-readable name for the device. Some devices have a name that the user can configure (e.g. \"Loudest speaker\") and some devices have a generic name associated with the manufacturer or device model. 
+       * @description A human-readable name for the device. Some devices have a name that the user can configure (e.g. \"Loudest speaker\") and some devices have a generic name associated with the manufacturer or device model.
        * @example Kitchen speaker
        */
       name?: string;
       /**
-       * @description Device type, such as "computer", "smartphone" or "speaker". 
+       * @description Device type, such as "computer", "smartphone" or "speaker".
        * @example computer
        */
       type?: string;
       /**
-       * @description The current volume in percent. 
+       * @description The current volume in percent.
        * @example 59
        */
       volume_percent?: number | null;
     };
     DevicesObject: {
       /** @description A list of 0..n Device objects */
-      devices?: (components["schemas"]["DeviceObject"])[];
+      devices?: components["schemas"]["DeviceObject"][];
     };
     DisallowsObject: {
       /** @description Interrupting playback. Optional field. */
@@ -1391,19 +1391,19 @@ export interface components {
     EpisodeBase: {
       /**
        * @description A URL to a 30 second preview (MP3 format) of the episode. `null` if not available.
-       *  
+       *
        * @example https://p.scdn.co/mp3-preview/2f37da1d4221f40b9d1a98cd191f4d6f1646ad17
        */
       audio_preview_url: string;
       /**
        * @description A description of the episode. HTML tags are stripped away from this field, use `html_description` field in case HTML tags are needed.
-       *  
+       *
        * @example A Spotify podcast sharing fresh insights on important topics of the moment—in a way only Spotify can. You’ll hear from experts in the music, podcast and tech industries as we discover and uncover stories about our work and the world around us.
        */
       description: string;
       /**
        * @description The episode length in milliseconds.
-       *  
+       *
        * @example 1686230
        */
       duration_ms: number;
@@ -1413,60 +1413,60 @@ export interface components {
       external_urls: components["schemas"]["ExternalUrlObject"];
       /**
        * @description A link to the Web API endpoint providing full details of the episode.
-       *  
+       *
        * @example https://api.spotify.com/v1/episodes/5Xt5DXGzch68nYYamXrNxZ
        */
       href: string;
       /**
        * @description A description of the episode. This field may contain HTML tags.
-       *  
+       *
        * @example <p>A Spotify podcast sharing fresh insights on important topics of the moment—in a way only Spotify can. You’ll hear from experts in the music, podcast and tech industries as we discover and uncover stories about our work and the world around us.</p>
        */
       html_description: string;
       /**
        * @description The [Spotify ID](/documentation/web-api/concepts/spotify-uris-ids) for the episode.
-       *  
+       *
        * @example 5Xt5DXGzch68nYYamXrNxZ
        */
       id: string;
       /** @description The cover art for the episode in various sizes, widest first. */
-      images: (components["schemas"]["ImageObject"])[];
+      images: components["schemas"]["ImageObject"][];
       /** @description True if the episode is hosted outside of Spotify's CDN. */
       is_externally_hosted: boolean;
       /** @description True if the episode is playable in the given market. Otherwise false. */
       is_playable: boolean;
       /**
-       * @deprecated 
+       * @deprecated
        * @description The language used in the episode, identified by a [ISO 639](https://en.wikipedia.org/wiki/ISO_639) code. This field is deprecated and might be removed in the future. Please use the `languages` field instead.
-       *  
+       *
        * @example en
        */
       language?: string;
       /**
        * @description A list of the languages used in the episode, identified by their [ISO 639-1](https://en.wikipedia.org/wiki/ISO_639) code.
-       *  
+       *
        * @example [
        *   "fr",
        *   "en"
        * ]
        */
-      languages: (string)[];
+      languages: string[];
       /**
        * @description The name of the episode.
-       *  
+       *
        * @example Starting Your Own Podcast: Tips, Tricks, and Advice From Anchor Creators
        */
       name: string;
       /**
        * @description The date the episode was first released, for example `"1981-12-15"`. Depending on the precision, it might be shown as `"1981"` or `"1981-12"`.
-       *  
+       *
        * @example "1981-12-15T00:00:00.000Z"
        */
       release_date: string;
       /**
        * @description The precision with which `release_date` value is known.
-       *  
-       * @example day 
+       *
+       * @example day
        * @enum {string}
        */
       release_date_precision: "year" | "month" | "day";
@@ -1476,13 +1476,13 @@ export interface components {
       resume_point: components["schemas"]["ResumePointObject"];
       /**
        * @description The object type.
-       *  
+       *
        * @enum {string}
        */
       type: "episode";
       /**
        * @description The [Spotify URI](/documentation/web-api/concepts/spotify-uris-ids) for the episode.
-       *  
+       *
        * @example spotify:episode:0zLhl3WsOCQHbe1BPTiHgr
        */
       uri: string;
@@ -1497,7 +1497,7 @@ export interface components {
        * - `market` - The content item is not available in the given market.
        * - `product` - The content item is not available for the user's subscription type.
        * - `explicit` - The content item is explicit and the user's account is set to not play explicit content.
-       * 
+       *
        * Additional reasons may be added in the future.
        * **Note**: If you use this field, make sure that your application safely handles unknown values.
        */
@@ -1536,26 +1536,26 @@ export interface components {
     ImageObject: {
       /**
        * @description The image height in pixels.
-       *  
+       *
        * @example 300
        */
       height: number | null;
       /**
        * @description The source URL of the image.
-       *  
+       *
        * @example https://i.scdn.co/image/ab67616d00001e02ff9ca10b55ce82ae553c8228
        */
       url: string;
       /**
        * @description The image width in pixels.
-       *  
+       *
        * @example 300
        */
       width: number | null;
     };
     /**
      * @description The key the track is in. Integers map to pitches using standard [Pitch Class notation](https://en.wikipedia.org/wiki/Pitch_class). E.g. 0 = C, 1 = C♯/D♭, 2 = D, and so on. If no key was detected, the value is -1.
-     *  
+     *
      * @example 9
      */
     Key: number;
@@ -1572,15 +1572,15 @@ export interface components {
       uri?: string;
     };
     /**
-     * Format: float 
+     * Format: float
      * @description The overall loudness of a track in decibels (dB). Loudness values are averaged across the entire track and are useful for comparing relative loudness of tracks. Loudness is the quality of a sound that is the primary psychological correlate of physical strength (amplitude). Values typically range between -60 and 0 db.
-     *  
+     *
      * @example -5.883
      */
     Loudness: number;
     /**
      * @description Mode indicates the modality (major or minor) of a track, the type of scale from which its melodic content is derived. Major is represented by 1 and minor is 0.
-     *  
+     *
      * @example 0
      */
     Mode: number;
@@ -1589,7 +1589,7 @@ export interface components {
       name?: string;
     };
     PagingArtistObject: components["schemas"]["PagingObject"] & {
-      items?: (components["schemas"]["ArtistObject"])[];
+      items?: components["schemas"]["ArtistObject"][];
     };
     PagingFeaturedPlaylistObject: {
       message?: string;
@@ -1598,91 +1598,91 @@ export interface components {
     PagingObject: {
       /**
        * @description A link to the Web API endpoint returning the full result of the request
-       *  
+       *
        * @example https://api.spotify.com/v1/me/shows?offset=0&limit=20
        */
       href: string;
       /**
        * @description The maximum number of items in the response (as set in the query or by default).
-       *  
+       *
        * @example 20
        */
       limit: number;
       /**
        * @description URL to the next page of items. ( `null` if none)
-       *  
+       *
        * @example https://api.spotify.com/v1/me/shows?offset=1&limit=1
        */
       next: string | null;
       /**
        * @description The offset of the items returned (as set in the query or by default)
-       *  
+       *
        * @example 0
        */
       offset: number;
       /**
        * @description URL to the previous page of items. ( `null` if none)
-       *  
+       *
        * @example https://api.spotify.com/v1/me/shows?offset=1&limit=1
        */
       previous: string | null;
       /**
        * @description The total number of items available to return.
-       *  
+       *
        * @example 4
        */
       total: number;
     };
     PagingPlaylistObject: components["schemas"]["PagingObject"] & {
-      items?: (components["schemas"]["SimplifiedPlaylistObject"])[];
+      items?: components["schemas"]["SimplifiedPlaylistObject"][];
     };
     PagingPlaylistTrackObject: components["schemas"]["PagingObject"] & {
-      items?: (components["schemas"]["PlaylistTrackObject"])[];
+      items?: components["schemas"]["PlaylistTrackObject"][];
     };
     PagingSavedAlbumObject: components["schemas"]["PagingObject"] & {
-      items?: (components["schemas"]["SavedAlbumObject"])[];
+      items?: components["schemas"]["SavedAlbumObject"][];
     };
     PagingSavedAudiobookObject: components["schemas"]["PagingObject"] & {
-      items?: (components["schemas"]["SavedAudiobookObject"])[];
+      items?: components["schemas"]["SavedAudiobookObject"][];
     };
     PagingSavedEpisodeObject: components["schemas"]["PagingObject"] & {
-      items?: (components["schemas"]["SavedEpisodeObject"])[];
+      items?: components["schemas"]["SavedEpisodeObject"][];
     };
     PagingSavedShowObject: components["schemas"]["PagingObject"] & {
-      items?: (components["schemas"]["SavedShowObject"])[];
+      items?: components["schemas"]["SavedShowObject"][];
     };
     PagingSavedTrackObject: components["schemas"]["PagingObject"] & {
-      items?: (components["schemas"]["SavedTrackObject"])[];
+      items?: components["schemas"]["SavedTrackObject"][];
     };
     PagingSimplifiedAlbumObject: components["schemas"]["PagingObject"] & {
-      items?: (components["schemas"]["SimplifiedAlbumObject"])[];
+      items?: components["schemas"]["SimplifiedAlbumObject"][];
     };
     PagingSimplifiedArtistObject: components["schemas"]["PagingObject"] & {
-      items?: (components["schemas"]["SimplifiedArtistObject"])[];
+      items?: components["schemas"]["SimplifiedArtistObject"][];
     };
     PagingSimplifiedAudiobookObject: components["schemas"]["PagingObject"] & {
-      items?: (components["schemas"]["SimplifiedAudiobookObject"])[];
+      items?: components["schemas"]["SimplifiedAudiobookObject"][];
     };
     PagingSimplifiedChapterObject: components["schemas"]["PagingObject"] & {
-      items?: (components["schemas"]["SimplifiedChapterObject"])[];
+      items?: components["schemas"]["SimplifiedChapterObject"][];
     };
     PagingSimplifiedEpisodeObject: components["schemas"]["PagingObject"] & {
-      items?: (components["schemas"]["SimplifiedEpisodeObject"])[];
+      items?: components["schemas"]["SimplifiedEpisodeObject"][];
     };
     PagingSimplifiedShowObject: components["schemas"]["PagingObject"] & {
-      items?: (components["schemas"]["SimplifiedShowObject"])[];
+      items?: components["schemas"]["SimplifiedShowObject"][];
     };
     PagingSimplifiedTrackObject: components["schemas"]["PagingObject"] & {
-      items?: (components["schemas"]["SimplifiedTrackObject"])[];
+      items?: components["schemas"]["SimplifiedTrackObject"][];
     };
     PagingTrackObject: components["schemas"]["PagingObject"] & {
-      items?: (components["schemas"]["TrackObject"])[];
+      items?: components["schemas"]["TrackObject"][];
     };
     PlayHistoryObject: {
       /** @description The context the track was played from. */
       context?: components["schemas"]["ContextObject"];
       /**
-       * Format: date-time 
+       * Format: date-time
        * @description The date and time the track was played.
        */
       played_at?: string;
@@ -1715,7 +1715,7 @@ export interface components {
      * * `NO_ACTIVE_DEVICE` - Requires an active device and the user has none.
      * * `PREMIUM_REQUIRED` - The request is prohibited for non-premium users.
      * * `UNKNOWN` - Certain actions are restricted because of unknown reasons.
-     *  
+     *
      * @enum {string}
      */
     PlayerErrorReasons: "NO_PREV_TRACK" | "NO_NEXT_TRACK" | "NO_SPECIFIC_TRACK" | "ALREADY_PAUSED" | "NOT_PAUSED" | "NOT_PLAYING_LOCALLY" | "NOT_PLAYING_TRACK" | "NOT_PLAYING_CONTEXT" | "ENDLESS_CONTEXT" | "CONTEXT_DISALLOW" | "ALREADY_PLAYING" | "RATE_LIMITED" | "REMOTE_CONTROL_DISALLOW" | "DEVICE_NOT_CONTROLLABLE" | "VOLUME_CONTROL_DISALLOW" | "NO_ACTIVE_DEVICE" | "PREMIUM_REQUIRED" | "UNKNOWN";
@@ -1733,7 +1733,7 @@ export interface components {
       /** @description The [Spotify ID](/documentation/web-api/concepts/spotify-uris-ids) for the playlist. */
       id?: string;
       /** @description Images for the playlist. The array may be empty or contain up to three images. The images are returned by size in descending order. See [Working with Playlists](/documentation/web-api/concepts/playlists). _**Note**: If returned, the source URL for the image (`url`) is temporary and will expire in less than a day._ */
-      images?: (components["schemas"]["ImageObject"])[];
+      images?: components["schemas"]["ImageObject"][];
       /** @description The name of the playlist. */
       name?: string;
       /** @description The user who owns the playlist */
@@ -1755,7 +1755,7 @@ export interface components {
     });
     PlaylistTrackObject: {
       /**
-       * Format: date-time 
+       * Format: date-time
        * @description The date and time the track or episode was added. _**Note**: some very old playlists may return `null` in this field._
        */
       added_at?: string;
@@ -1783,7 +1783,7 @@ export interface components {
       id?: string;
       /**
        * @description The object type.
-       *  
+       *
        * @enum {string}
        */
       type?: "user";
@@ -1808,7 +1808,7 @@ export interface components {
       /** @description The [Spotify user ID](/documentation/web-api/concepts/spotify-uris-ids) for the user. */
       id?: string;
       /** @description The user's profile image. */
-      images?: (components["schemas"]["ImageObject"])[];
+      images?: components["schemas"]["ImageObject"][];
       /** @description The user's Spotify subscription level: "premium", "free", etc. (The subscription level "open" can be considered the same as "free".) _This field is only available when the current user has granted access to the [user-read-private](/documentation/web-api/concepts/scopes/#list-of-scopes) scope._ */
       product?: string;
       /** @description The object type: "user" */
@@ -1828,10 +1828,10 @@ export interface components {
       /** @description The [Spotify user ID](/documentation/web-api/concepts/spotify-uris-ids) for this user. */
       id?: string;
       /** @description The user's profile image. */
-      images?: (components["schemas"]["ImageObject"])[];
+      images?: components["schemas"]["ImageObject"][];
       /**
        * @description The object type.
-       *  
+       *
        * @enum {string}
        */
       type?: "user";
@@ -1860,9 +1860,9 @@ export interface components {
     };
     RecommendationsObject: {
       /** @description An array of recommendation seed objects. */
-      seeds: (components["schemas"]["RecommendationSeedObject"])[];
+      seeds: components["schemas"]["RecommendationSeedObject"][];
       /** @description An array of track objects ordered according to the parameters supplied. */
-      tracks: (components["schemas"]["TrackObject"])[];
+      tracks: components["schemas"]["TrackObject"][];
     };
     ResumePointObject: {
       /** @description Whether or not the episode has been fully played by the user. */
@@ -1872,7 +1872,7 @@ export interface components {
     };
     SavedAlbumObject: {
       /**
-       * Format: date-time 
+       * Format: date-time
        * @description The date and time the album was saved
        * Timestamps are returned in ISO 8601 format as Coordinated Universal Time (UTC) with a zero offset: YYYY-MM-DDTHH:MM:SSZ.
        * If the time is imprecise (for example, the date/time of an album release), an additional field indicates the precision; see for example, release_date in an album object.
@@ -1883,7 +1883,7 @@ export interface components {
     };
     SavedAudiobookObject: {
       /**
-       * Format: date-time 
+       * Format: date-time
        * @description The date and time the audiobook was saved
        * Timestamps are returned in ISO 8601 format as Coordinated Universal Time (UTC) with a zero offset: YYYY-MM-DDTHH:MM:SSZ.
        * If the time is imprecise (for example, the date/time of an album release), an additional field indicates the precision; see for example, release_date in an album object.
@@ -1894,7 +1894,7 @@ export interface components {
     };
     SavedEpisodeObject: {
       /**
-       * Format: date-time 
+       * Format: date-time
        * @description The date and time the episode was saved.
        * Timestamps are returned in ISO 8601 format as Coordinated Universal Time (UTC) with a zero offset: YYYY-MM-DDTHH:MM:SSZ.
        */
@@ -1904,7 +1904,7 @@ export interface components {
     };
     SavedShowObject: {
       /**
-       * Format: date-time 
+       * Format: date-time
        * @description The date and time the show was saved.
        * Timestamps are returned in ISO 8601 format as Coordinated Universal Time (UTC) with a zero offset: YYYY-MM-DDTHH:MM:SSZ.
        * If the time is imprecise (for example, the date/time of an album release), an additional field indicates the precision; see for example, release_date in an album object.
@@ -1915,7 +1915,7 @@ export interface components {
     };
     SavedTrackObject: {
       /**
-       * Format: date-time 
+       * Format: date-time
        * @description The date and time the track was saved.
        * Timestamps are returned in ISO 8601 format as Coordinated Universal Time (UTC) with a zero offset: YYYY-MM-DDTHH:MM:SSZ.
        * If the time is imprecise (for example, the date/time of an album release), an additional field indicates the precision; see for example, release_date in an album object.
@@ -1926,58 +1926,58 @@ export interface components {
     };
     SectionObject: {
       /**
-       * @description The confidence, from 0.0 to 1.0, of the reliability of the section's "designation". 
+       * @description The confidence, from 0.0 to 1.0, of the reliability of the section's "designation".
        * @example 1
        */
       confidence?: number;
       /**
-       * @description The duration (in seconds) of the section. 
+       * @description The duration (in seconds) of the section.
        * @example 6.97092
        */
       duration?: number;
       /**
-       * @description The estimated overall key of the section. The values in this field ranging from 0 to 11 mapping to pitches using standard Pitch Class notation (E.g. 0 = C, 1 = C♯/D♭, 2 = D, and so on). If no key was detected, the value is -1. 
+       * @description The estimated overall key of the section. The values in this field ranging from 0 to 11 mapping to pitches using standard Pitch Class notation (E.g. 0 = C, 1 = C♯/D♭, 2 = D, and so on). If no key was detected, the value is -1.
        * @example 9
        */
       key?: number;
       /**
-       * @description The confidence, from 0.0 to 1.0, of the reliability of the key. Songs with many key changes may correspond to low values in this field. 
+       * @description The confidence, from 0.0 to 1.0, of the reliability of the key. Songs with many key changes may correspond to low values in this field.
        * @example 0.297
        */
       key_confidence?: number;
       /**
-       * @description The overall loudness of the section in decibels (dB). Loudness values are useful for comparing relative loudness of sections within tracks. 
+       * @description The overall loudness of the section in decibels (dB). Loudness values are useful for comparing relative loudness of sections within tracks.
        * @example -14.938
        */
       loudness?: number;
       /**
-       * @description Indicates the modality (major or minor) of a section, the type of scale from which its melodic content is derived. This field will contain a 0 for "minor", a 1 for "major", or a -1 for no result. Note that the major key (e.g. C major) could more likely be confused with the minor key at 3 semitones lower (e.g. A minor) as both keys carry the same pitches. 
+       * @description Indicates the modality (major or minor) of a section, the type of scale from which its melodic content is derived. This field will contain a 0 for "minor", a 1 for "major", or a -1 for no result. Note that the major key (e.g. C major) could more likely be confused with the minor key at 3 semitones lower (e.g. A minor) as both keys carry the same pitches.
        * @enum {number}
        */
       mode?: -1 | 0 | 1;
       /**
-       * @description The confidence, from 0.0 to 1.0, of the reliability of the `mode`. 
+       * @description The confidence, from 0.0 to 1.0, of the reliability of the `mode`.
        * @example 0.471
        */
       mode_confidence?: number;
       /**
-       * @description The starting point (in seconds) of the section. 
+       * @description The starting point (in seconds) of the section.
        * @example 0
        */
       start?: number;
       /**
-       * @description The overall estimated tempo of the section in beats per minute (BPM). In musical terminology, tempo is the speed or pace of a given piece and derives directly from the average beat duration. 
+       * @description The overall estimated tempo of the section in beats per minute (BPM). In musical terminology, tempo is the speed or pace of a given piece and derives directly from the average beat duration.
        * @example 113.178
        */
       tempo?: number;
       /**
-       * @description The confidence, from 0.0 to 1.0, of the reliability of the tempo. Some tracks contain tempo changes or sounds which don't contain tempo (like pure speech) which would correspond to a low value in this field. 
+       * @description The confidence, from 0.0 to 1.0, of the reliability of the tempo. Some tracks contain tempo changes or sounds which don't contain tempo (like pure speech) which would correspond to a low value in this field.
        * @example 0.647
        */
       tempo_confidence?: number;
       time_signature?: components["schemas"]["TimeSignature"];
       /**
-       * @description The confidence, from 0.0 to 1.0, of the reliability of the `time_signature`. Sections with time signature changes may correspond to low values in this field. 
+       * @description The confidence, from 0.0 to 1.0, of the reliability of the `time_signature`. Sections with time signature changes may correspond to low values in this field.
        * @example 1
        */
       time_signature_confidence?: number;
@@ -1985,75 +1985,75 @@ export interface components {
     SegmentObject: {
       /**
        * @description The confidence, from 0.0 to 1.0, of the reliability of the segmentation. Segments of the song which are difficult to logically segment (e.g: noise) may correspond to low values in this field.
-       *  
+       *
        * @example 0.435
        */
       confidence?: number;
       /**
-       * @description The duration (in seconds) of the segment. 
+       * @description The duration (in seconds) of the segment.
        * @example 0.19891
        */
       duration?: number;
       /**
-       * @description The offset loudness of the segment in decibels (dB). This value should be equivalent to the loudness_start of the following segment. 
+       * @description The offset loudness of the segment in decibels (dB). This value should be equivalent to the loudness_start of the following segment.
        * @example 0
        */
       loudness_end?: number;
       /**
-       * @description The peak loudness of the segment in decibels (dB). Combined with `loudness_start` and `loudness_max_time`, these components can be used to describe the "attack" of the segment. 
+       * @description The peak loudness of the segment in decibels (dB). Combined with `loudness_start` and `loudness_max_time`, these components can be used to describe the "attack" of the segment.
        * @example -14.25
        */
       loudness_max?: number;
       /**
-       * @description The segment-relative offset of the segment peak loudness in seconds. Combined with `loudness_start` and `loudness_max`, these components can be used to desctibe the "attack" of the segment. 
+       * @description The segment-relative offset of the segment peak loudness in seconds. Combined with `loudness_start` and `loudness_max`, these components can be used to desctibe the "attack" of the segment.
        * @example 0.07305
        */
       loudness_max_time?: number;
       /**
-       * @description The onset loudness of the segment in decibels (dB). Combined with `loudness_max` and `loudness_max_time`, these components can be used to describe the "attack" of the segment. 
+       * @description The onset loudness of the segment in decibels (dB). Combined with `loudness_max` and `loudness_max_time`, these components can be used to describe the "attack" of the segment.
        * @example -23.053
        */
       loudness_start?: number;
       /**
        * @description Pitch content is given by a “chroma” vector, corresponding to the 12 pitch classes C, C#, D to B, with values ranging from 0 to 1 that describe the relative dominance of every pitch in the chromatic scale. For example a C Major chord would likely be represented by large values of C, E and G (i.e. classes 0, 4, and 7).
-       * 
+       *
        * Vectors are normalized to 1 by their strongest dimension, therefore noisy sounds are likely represented by values that are all close to 1, while pure tones are described by one value at 1 (the pitch) and others near 0.
        * As can be seen below, the 12 vector indices are a combination of low-power spectrum values at their respective pitch frequencies.
        * ![pitch vector](https://developer.spotify.com/assets/audio/Pitch_vector.png)
-       *  
+       *
        * @example [
        *   0.212,
        *   0.141,
        *   0.294
        * ]
        */
-      pitches?: (number)[];
+      pitches?: number[];
       /**
-       * @description The starting point (in seconds) of the segment. 
+       * @description The starting point (in seconds) of the segment.
        * @example 0.70154
        */
       start?: number;
       /**
        * @description Timbre is the quality of a musical note or sound that distinguishes different types of musical instruments, or voices. It is a complex notion also referred to as sound color, texture, or tone quality, and is derived from the shape of a segment’s spectro-temporal surface, independently of pitch and loudness. The timbre feature is a vector that includes 12 unbounded values roughly centered around 0. Those values are high level abstractions of the spectral surface, ordered by degree of importance.
-       * 
+       *
        * For completeness however, the first dimension represents the average loudness of the segment; second emphasizes brightness; third is more closely correlated to the flatness of a sound; fourth to sounds with a stronger attack; etc. See an image below representing the 12 basis functions (i.e. template segments).
        * ![timbre basis functions](https://developer.spotify.com/assets/audio/Timbre_basis_functions.png)
-       * 
+       *
        * The actual timbre of the segment is best described as a linear combination of these 12 basis functions weighted by the coefficient values: timbre = c1 x b1 + c2 x b2 + ... + c12 x b12, where c1 to c12 represent the 12 coefficients and b1 to b12 the 12 basis functions as displayed below. Timbre vectors are best used in comparison with each other.
-       *  
+       *
        * @example [
        *   42.115,
        *   64.373,
        *   -0.233
        * ]
        */
-      timbre?: (number)[];
+      timbre?: number[];
     };
     ShowBase: {
       /** @description A list of the countries in which the show can be played, identified by their [ISO 3166-1 alpha-2](http://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) code. */
-      available_markets: (string)[];
+      available_markets: string[];
       /** @description The copyright statements of the show. */
-      copyrights: (components["schemas"]["CopyrightObject"])[];
+      copyrights: components["schemas"]["CopyrightObject"][];
       /** @description A description of the show. HTML tags are stripped away from this field, use `html_description` field in case HTML tags are needed. */
       description: string;
       /** @description Whether or not the show has explicit content (true = yes it does; false = no it does not OR unknown). */
@@ -2067,11 +2067,11 @@ export interface components {
       /** @description The [Spotify ID](/documentation/web-api/concepts/spotify-uris-ids) for the show. */
       id: string;
       /** @description The cover art for the show in various sizes, widest first. */
-      images: (components["schemas"]["ImageObject"])[];
+      images: components["schemas"]["ImageObject"][];
       /** @description True if all of the shows episodes are hosted outside of Spotify's CDN. This field might be `null` in some cases. */
       is_externally_hosted: boolean;
       /** @description A list of the languages used in the show, identified by their [ISO 639](https://en.wikipedia.org/wiki/ISO_639) code. */
-      languages: (string)[];
+      languages: string[];
       /** @description The media type of the show. */
       media_type: string;
       /** @description The name of the episode. */
@@ -2082,7 +2082,7 @@ export interface components {
       total_episodes: number;
       /**
        * @description The object type.
-       *  
+       *
        * @enum {string}
        */
       type: "show";
@@ -2096,13 +2096,13 @@ export interface components {
     SimplifiedAlbumObject: components["schemas"]["AlbumBase"] & ({
       /**
        * @description The field is present when getting an artist's albums. Compare to album_type this field represents relationship between the artist and the album.
-       *  
-       * @example compilation 
+       *
+       * @example compilation
        * @enum {string}
        */
       album_group?: "album" | "single" | "compilation" | "appears_on";
       /** @description The artists of the album. Each artist object includes a link in `href` to more detailed information about the artist. */
-      artists: (components["schemas"]["SimplifiedArtistObject"])[];
+      artists: components["schemas"]["SimplifiedArtistObject"][];
     });
     SimplifiedArtistObject: {
       /** @description Known external URLs for this artist. */
@@ -2115,7 +2115,7 @@ export interface components {
       name?: string;
       /**
        * @description The object type.
-       *  
+       *
        * @enum {string}
        */
       type?: "artist";
@@ -2137,7 +2137,7 @@ export interface components {
       /** @description The [Spotify ID](/documentation/web-api/concepts/spotify-uris-ids) for the playlist. */
       id?: string;
       /** @description Images for the playlist. The array may be empty or contain up to three images. The images are returned by size in descending order. See [Working with Playlists](/documentation/web-api/concepts/playlists). _**Note**: If returned, the source URL for the image (`url`) is temporary and will expire in less than a day._ */
-      images?: (components["schemas"]["ImageObject"])[];
+      images?: components["schemas"]["ImageObject"][];
       /** @description The name of the playlist. */
       name?: string;
       /** @description The user who owns the playlist */
@@ -2156,9 +2156,9 @@ export interface components {
     SimplifiedShowObject: components["schemas"]["ShowBase"];
     SimplifiedTrackObject: {
       /** @description The artists who performed the track. Each artist object includes a link in `href` to more detailed information about the artist. */
-      artists?: (components["schemas"]["SimplifiedArtistObject"])[];
+      artists?: components["schemas"]["SimplifiedArtistObject"][];
       /** @description A list of the countries in which the track can be played, identified by their [ISO 3166-1 alpha-2](http://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) code. */
-      available_markets?: (string)[];
+      available_markets?: string[];
       /** @description The disc number (usually `1` unless the album consists of more than one disc). */
       disc_number?: number;
       /** @description The track length in milliseconds. */
@@ -2191,31 +2191,31 @@ export interface components {
       uri?: string;
     };
     /**
-     * Format: float 
+     * Format: float
      * @description The overall estimated tempo of a track in beats per minute (BPM). In musical terminology, tempo is the speed or pace of a given piece and derives directly from the average beat duration.
-     *  
+     *
      * @example 118.211
      */
     Tempo: number;
     TimeIntervalObject: {
       /**
-       * @description The confidence, from 0.0 to 1.0, of the reliability of the interval. 
+       * @description The confidence, from 0.0 to 1.0, of the reliability of the interval.
        * @example 0.925
        */
       confidence?: number;
       /**
-       * @description The duration (in seconds) of the time interval. 
+       * @description The duration (in seconds) of the time interval.
        * @example 2.18749
        */
       duration?: number;
       /**
-       * @description The starting point (in seconds) of the time interval. 
+       * @description The starting point (in seconds) of the time interval.
        * @example 0.49567
        */
       start?: number;
     };
     /**
-     * @description An estimated time signature. The time signature (meter) is a notational convention to specify how many beats are in each bar (or measure). The time signature ranges from 3 to 7 indicating time signatures of "3/4", to "7/4". 
+     * @description An estimated time signature. The time signature (meter) is a notational convention to specify how many beats are in each bar (or measure). The time signature ranges from 3 to 7 indicating time signatures of "3/4", to "7/4".
      * @example 4
      */
     TimeSignature: number;
@@ -2223,9 +2223,9 @@ export interface components {
       /** @description The album on which the track appears. The album object includes a link in `href` to full information about the album. */
       album?: components["schemas"]["SimplifiedAlbumObject"];
       /** @description The artists who performed the track. Each artist object includes a link in `href` to more detailed information about the artist. */
-      artists?: (components["schemas"]["ArtistObject"])[];
+      artists?: components["schemas"]["ArtistObject"][];
       /** @description A list of the countries in which the track can be played, identified by their [ISO 3166-1 alpha-2](http://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) code. */
-      available_markets?: (string)[];
+      available_markets?: string[];
       /** @description The disc number (usually `1` unless the album consists of more than one disc). */
       disc_number?: number;
       /** @description The track length in milliseconds. */
@@ -2258,7 +2258,7 @@ export interface components {
       track_number?: number;
       /**
        * @description The object type: "track".
-       *  
+       *
        * @enum {string}
        */
       type?: "track";
@@ -2271,7 +2271,7 @@ export interface components {
        * - `market` - The content item is not available in the given market.
        * - `product` - The content item is not available for the user's subscription type.
        * - `explicit` - The content item is explicit and the user's account is set to not play explicit content.
-       * 
+       *
        * Additional reasons may be added in the future.
        * **Note**: If you use this field, make sure that your application safely handles unknown values.
        */
@@ -2279,49 +2279,49 @@ export interface components {
     };
     TuneableTrackObject: {
       /**
-       * Format: float 
+       * Format: float
        * @description A confidence measure from 0.0 to 1.0 of whether the track is acoustic. 1.0 represents high confidence the track is acoustic.
        */
       acousticness?: number;
       /**
-       * Format: float 
+       * Format: float
        * @description Danceability describes how suitable a track is for dancing based on a combination of musical elements including tempo, rhythm stability, beat strength, and overall regularity. A value of 0.0 is least danceable and 1.0 is most danceable.
        */
       danceability?: number;
       /** @description The duration of the track in milliseconds. */
       duration_ms?: number;
       /**
-       * Format: float 
+       * Format: float
        * @description Energy is a measure from 0.0 to 1.0 and represents a perceptual measure of intensity and activity. Typically, energetic tracks feel fast, loud, and noisy. For example, death metal has high energy, while a Bach prelude scores low on the scale. Perceptual features contributing to this attribute include dynamic range, perceived loudness, timbre, onset rate, and general entropy.
        */
       energy?: number;
       /**
-       * Format: float 
+       * Format: float
        * @description Predicts whether a track contains no vocals. "Ooh" and "aah" sounds are treated as instrumental in this context. Rap or spoken word tracks are clearly "vocal". The closer the instrumentalness value is to 1.0, the greater likelihood the track contains no vocal content. Values above 0.5 are intended to represent instrumental tracks, but confidence is higher as the value approaches 1.0.
        */
       instrumentalness?: number;
       key?: components["schemas"]["Key"];
       /**
-       * Format: float 
+       * Format: float
        * @description Detects the presence of an audience in the recording. Higher liveness values represent an increased probability that the track was performed live. A value above 0.8 provides strong likelihood that the track is live.
        */
       liveness?: number;
       loudness?: components["schemas"]["Loudness"];
       mode?: components["schemas"]["Mode"];
       /**
-       * Format: float 
+       * Format: float
        * @description The popularity of the track. The value will be between 0 and 100, with 100 being the most popular. The popularity is calculated by algorithm and is based, in the most part, on the total number of plays the track has had and how recent those plays are. _**Note**: When applying track relinking via the `market` parameter, it is expected to find relinked tracks with popularities that do not match `min_*`, `max_*`and `target_*` popularities. These relinked tracks are accurate replacements for unplayable tracks with the expected popularity scores. Original, non-relinked tracks are available via the `linked_from` attribute of the [relinked track response](/documentation/web-api/concepts/track-relinking)._
        */
       popularity?: number;
       /**
-       * Format: float 
+       * Format: float
        * @description Speechiness detects the presence of spoken words in a track. The more exclusively speech-like the recording (e.g. talk show, audio book, poetry), the closer to 1.0 the attribute value. Values above 0.66 describe tracks that are probably made entirely of spoken words. Values between 0.33 and 0.66 describe tracks that may contain both music and speech, either in sections or layered, including such cases as rap music. Values below 0.33 most likely represent music and other non-speech-like tracks.
        */
       speechiness?: number;
       tempo?: components["schemas"]["Tempo"];
       time_signature?: components["schemas"]["TimeSignature"];
       /**
-       * Format: float 
+       * Format: float
        * @description A measure from 0.0 to 1.0 describing the musical positiveness conveyed by a track. Tracks with high valence sound more positive (e.g. happy, cheerful, euphoric), while tracks with low valence sound more negative (e.g. sad, depressed, angry).
        */
       valence?: number;
@@ -2331,13 +2331,13 @@ export interface components {
     /** @description Array of booleans */
     ArrayOfBooleans: {
       content: {
-        "application/json": (boolean)[];
+        "application/json": boolean[];
       };
     };
     /** @description A set of images */
     ArrayOfImages: {
       content: {
-        "application/json": (components["schemas"]["ImageObject"])[];
+        "application/json": components["schemas"]["ImageObject"][];
       };
     };
     /** @description The request contains malformed data in path, query parameters, or body. */
@@ -2377,7 +2377,7 @@ export interface components {
     ManyAlbums: {
       content: {
         "application/json": {
-          albums: (components["schemas"]["AlbumObject"])[];
+          albums: components["schemas"]["AlbumObject"][];
         };
       };
     };
@@ -2385,7 +2385,7 @@ export interface components {
     ManyArtists: {
       content: {
         "application/json": {
-          artists: (components["schemas"]["ArtistObject"])[];
+          artists: components["schemas"]["ArtistObject"][];
         };
       };
     };
@@ -2393,7 +2393,7 @@ export interface components {
     ManyAudioFeatures: {
       content: {
         "application/json": {
-          audio_features: (components["schemas"]["AudioFeaturesObject"])[];
+          audio_features: components["schemas"]["AudioFeaturesObject"][];
         };
       };
     };
@@ -2401,7 +2401,7 @@ export interface components {
     ManyAudiobooks: {
       content: {
         "application/json": {
-          audiobooks: (components["schemas"]["AudiobookObject"])[];
+          audiobooks: components["schemas"]["AudiobookObject"][];
         };
       };
     };
@@ -2409,7 +2409,7 @@ export interface components {
     ManyChapters: {
       content: {
         "application/json": {
-          chapters: (components["schemas"]["ChapterObject"])[];
+          chapters: components["schemas"]["ChapterObject"][];
         };
       };
     };
@@ -2423,7 +2423,7 @@ export interface components {
     ManyEpisodes: {
       content: {
         "application/json": {
-          episodes: (components["schemas"]["EpisodeObject"])[];
+          episodes: components["schemas"]["EpisodeObject"][];
         };
       };
     };
@@ -2437,7 +2437,7 @@ export interface components {
            *   "samba"
            * ]
            */
-          genres: (string)[];
+          genres: string[];
         };
       };
     };
@@ -2445,7 +2445,7 @@ export interface components {
     ManySimplifiedShows: {
       content: {
         "application/json": {
-          shows: (components["schemas"]["SimplifiedShowObject"])[];
+          shows: components["schemas"]["SimplifiedShowObject"][];
         };
       };
     };
@@ -2453,7 +2453,7 @@ export interface components {
     ManyTracks: {
       content: {
         "application/json": {
-          tracks: (components["schemas"]["TrackObject"])[];
+          tracks: components["schemas"]["TrackObject"][];
         };
       };
     };
@@ -2468,7 +2468,7 @@ export interface components {
            *   "IT"
            * ]
            */
-          markets?: (string)[];
+          markets?: string[];
         };
       };
     };
@@ -2589,7 +2589,7 @@ export interface components {
       content: {
         "application/json": {
           categories: components["schemas"]["PagingObject"] & {
-            items?: (components["schemas"]["CategoryObject"])[];
+            items?: components["schemas"]["CategoryObject"][];
           };
         };
       };
@@ -2769,13 +2769,15 @@ export interface components {
   pathItems: never;
 }
 
+export type $defs = Record<string, never>;
+
 export type external = Record<string, never>;
 
 export interface operations {
 
   /**
    * Get Several Albums
-   *  
+   *
    * @description Get Spotify catalog information for multiple albums identified by their Spotify IDs.
    */
   "get-multiple-albums": {
@@ -2794,7 +2796,7 @@ export interface operations {
   };
   /**
    * Get Album
-   *  
+   *
    * @description Get Spotify catalog information for a single album.
    */
   "get-an-album": {
@@ -2815,7 +2817,7 @@ export interface operations {
   };
   /**
    * Get Album Tracks
-   *  
+   *
    * @description Get Spotify catalog information about an album’s tracks.
    * Optional parameters can be used to limit the number of tracks returned.
    */
@@ -2839,7 +2841,7 @@ export interface operations {
   };
   /**
    * Get Several Artists
-   *  
+   *
    * @description Get Spotify catalog information for several artists based on their Spotify IDs.
    */
   "get-multiple-artists": {
@@ -2857,7 +2859,7 @@ export interface operations {
   };
   /**
    * Get Artist
-   *  
+   *
    * @description Get Spotify catalog information for a single artist identified by their unique Spotify ID.
    */
   "get-an-artist": {
@@ -2875,7 +2877,7 @@ export interface operations {
   };
   /**
    * Get Artist's Albums
-   *  
+   *
    * @description Get Spotify catalog information about an artist's albums.
    */
   "get-an-artists-albums": {
@@ -2899,7 +2901,7 @@ export interface operations {
   };
   /**
    * Get Artist's Related Artists
-   *  
+   *
    * @description Get Spotify catalog information about artists similar to a given artist. Similarity is based on analysis of the Spotify community's [listening history](http://news.spotify.com/se/2010/02/03/related-artists/).
    */
   "get-an-artists-related-artists": {
@@ -2917,7 +2919,7 @@ export interface operations {
   };
   /**
    * Get Artist's Top Tracks
-   *  
+   *
    * @description Get Spotify catalog information about an artist's top tracks by country.
    */
   "get-an-artists-top-tracks": {
@@ -2938,7 +2940,7 @@ export interface operations {
   };
   /**
    * Get Track's Audio Analysis
-   *  
+   *
    * @description Get a low-level audio analysis for a track in the Spotify catalog. The audio analysis describes the track’s structure and musical content, including rhythm, pitch, and timbre.
    */
   "get-audio-analysis": {
@@ -2956,7 +2958,7 @@ export interface operations {
   };
   /**
    * Get Tracks' Audio Features
-   *  
+   *
    * @description Get audio features for multiple tracks based on their Spotify IDs.
    */
   "get-several-audio-features": {
@@ -2974,7 +2976,7 @@ export interface operations {
   };
   /**
    * Get Track's Audio Features
-   *  
+   *
    * @description Get audio feature information for a single track identified by its unique
    * Spotify ID.
    */
@@ -2993,7 +2995,7 @@ export interface operations {
   };
   /**
    * Get Several Audiobooks
-   *  
+   *
    * @description Get Spotify catalog information for several audiobooks identified by their Spotify IDs.<br />
    * **Note: Audiobooks are only available for the US, UK, Ireland, New Zealand and Australia markets.**
    */
@@ -3013,7 +3015,7 @@ export interface operations {
   };
   /**
    * Get an Audiobook
-   *  
+   *
    * @description Get Spotify catalog information for a single audiobook.<br />
    * **Note: Audiobooks are only available for the US, UK, Ireland, New Zealand and Australia markets.**
    */
@@ -3037,7 +3039,7 @@ export interface operations {
   };
   /**
    * Get Audiobook Chapters
-   *  
+   *
    * @description Get Spotify catalog information about an audiobook's chapters.<br />
    * **Note: Audiobooks are only available for the US, UK, Ireland, New Zealand and Australia markets.**
    */
@@ -3061,7 +3063,7 @@ export interface operations {
   };
   /**
    * Get Several Browse Categories
-   *  
+   *
    * @description Get a list of categories used to tag items in Spotify (on, for example, the Spotify player’s “Browse” tab).
    */
   "get-categories": {
@@ -3082,7 +3084,7 @@ export interface operations {
   };
   /**
    * Get Single Browse Category
-   *  
+   *
    * @description Get a single category used to tag items in Spotify (on, for example, the Spotify player’s “Browse” tab).
    */
   "get-a-category": {
@@ -3104,7 +3106,7 @@ export interface operations {
   };
   /**
    * Get Category's Playlists
-   *  
+   *
    * @description Get a list of Spotify playlists tagged with a particular category.
    */
   "get-a-categories-playlists": {
@@ -3127,7 +3129,7 @@ export interface operations {
   };
   /**
    * Get Featured Playlists
-   *  
+   *
    * @description Get a list of Spotify featured playlists (shown, for example, on a Spotify player's 'Browse' tab).
    */
   "get-featured-playlists": {
@@ -3149,7 +3151,7 @@ export interface operations {
   };
   /**
    * Get New Releases
-   *  
+   *
    * @description Get a list of new album releases featured in Spotify (shown, for example, on a Spotify player’s “Browse” tab).
    */
   "get-new-releases": {
@@ -3169,7 +3171,7 @@ export interface operations {
   };
   /**
    * Get Several Chapters
-   *  
+   *
    * @description Get Spotify catalog information for several chapters identified by their Spotify IDs.<br />
    * **Note: Chapters are only available for the US, UK, Ireland, New Zealand and Australia markets.**
    */
@@ -3189,7 +3191,7 @@ export interface operations {
   };
   /**
    * Get a Chapter
-   *  
+   *
    * @description Get Spotify catalog information for a single chapter.<br />
    * **Note: Chapters are only available for the US, UK, Ireland, New Zealand and Australia markets.**
    */
@@ -3211,7 +3213,7 @@ export interface operations {
   };
   /**
    * Get Several Episodes
-   *  
+   *
    * @description Get Spotify catalog information for several episodes based on their Spotify IDs.
    */
   "get-multiple-episodes": {
@@ -3230,7 +3232,7 @@ export interface operations {
   };
   /**
    * Get Episode
-   *  
+   *
    * @description Get Spotify catalog information for a single episode identified by its
    * unique Spotify ID.
    */
@@ -3252,7 +3254,7 @@ export interface operations {
   };
   /**
    * Get Available Markets
-   *  
+   *
    * @description Get the list of markets where Spotify is available.
    */
   "get-available-markets": {
@@ -3265,7 +3267,7 @@ export interface operations {
   };
   /**
    * Get Current User's Profile
-   *  
+   *
    * @description Get detailed profile information about the current user (including the
    * current user's username).
    */
@@ -3279,7 +3281,7 @@ export interface operations {
   };
   /**
    * Get User's Saved Albums
-   *  
+   *
    * @description Get a list of the albums saved in the current Spotify user's 'Your Music' library.
    */
   "get-users-saved-albums": {
@@ -3299,7 +3301,7 @@ export interface operations {
   };
   /**
    * Save Albums for Current User
-   *  
+   *
    * @description Save one or more albums to the current user's 'Your Music' library.
    */
   "save-albums-user": {
@@ -3312,14 +3314,16 @@ export interface operations {
       content: {
         "application/json": {
           /** @description A JSON array of the [Spotify IDs](/documentation/web-api/concepts/spotify-uris-ids). For example: `["4iV5W9uYEdYUVa79Axb7Rh", "1301WleyT98MSxVHPZCA6M"]`<br/>A maximum of 50 items can be specified in one request. _**Note**: if the `ids` parameter is present in the query string, any IDs listed here in the body will be ignored._ */
-          ids?: (string)[];
+          ids?: string[];
           [key: string]: unknown;
         };
       };
     };
     responses: {
       /** @description The album is saved */
-      200: never;
+      200: {
+        content: never;
+      };
       401: components["responses"]["Unauthorized"];
       403: components["responses"]["Forbidden"];
       429: components["responses"]["TooManyRequests"];
@@ -3327,7 +3331,7 @@ export interface operations {
   };
   /**
    * Remove Users' Saved Albums
-   *  
+   *
    * @description Remove one or more albums from the current user's 'Your Music' library.
    */
   "remove-albums-user": {
@@ -3340,14 +3344,16 @@ export interface operations {
       content: {
         "application/json": {
           /** @description A JSON array of the [Spotify IDs](/documentation/web-api/concepts/spotify-uris-ids). For example: `["4iV5W9uYEdYUVa79Axb7Rh", "1301WleyT98MSxVHPZCA6M"]`<br/>A maximum of 50 items can be specified in one request. _**Note**: if the `ids` parameter is present in the query string, any IDs listed here in the body will be ignored._ */
-          ids?: (string)[];
+          ids?: string[];
           [key: string]: unknown;
         };
       };
     };
     responses: {
       /** @description Album(s) have been removed from the library */
-      200: never;
+      200: {
+        content: never;
+      };
       401: components["responses"]["Unauthorized"];
       403: components["responses"]["Forbidden"];
       429: components["responses"]["TooManyRequests"];
@@ -3355,7 +3361,7 @@ export interface operations {
   };
   /**
    * Check User's Saved Albums
-   *  
+   *
    * @description Check if one or more albums is already saved in the current Spotify user's 'Your Music' library.
    */
   "check-users-saved-albums": {
@@ -3373,7 +3379,7 @@ export interface operations {
   };
   /**
    * Get User's Saved Audiobooks
-   *  
+   *
    * @description Get a list of the audiobooks saved in the current Spotify user's 'Your Music' library.
    */
   "get-users-saved-audiobooks": {
@@ -3392,7 +3398,7 @@ export interface operations {
   };
   /**
    * Save Audiobooks for Current User
-   *  
+   *
    * @description Save one or more audiobooks to the current Spotify user's library.
    */
   "save-audiobooks-user": {
@@ -3403,7 +3409,9 @@ export interface operations {
     };
     responses: {
       /** @description Audiobook(s) are saved to the library */
-      200: never;
+      200: {
+        content: never;
+      };
       401: components["responses"]["Unauthorized"];
       403: components["responses"]["Forbidden"];
       429: components["responses"]["TooManyRequests"];
@@ -3411,7 +3419,7 @@ export interface operations {
   };
   /**
    * Remove User's Saved Audiobooks
-   *  
+   *
    * @description Remove one or more audiobooks from the Spotify user's library.
    */
   "remove-audiobooks-user": {
@@ -3422,7 +3430,9 @@ export interface operations {
     };
     responses: {
       /** @description Audiobook(s) have been removed from the library */
-      200: never;
+      200: {
+        content: never;
+      };
       401: components["responses"]["Unauthorized"];
       403: components["responses"]["Forbidden"];
       429: components["responses"]["TooManyRequests"];
@@ -3430,7 +3440,7 @@ export interface operations {
   };
   /**
    * Check User's Saved Audiobooks
-   *  
+   *
    * @description Check if one or more audiobooks are already saved in the current Spotify user's library.
    */
   "check-users-saved-audiobooks": {
@@ -3448,7 +3458,7 @@ export interface operations {
   };
   /**
    * Get User's Saved Episodes
-   *  
+   *
    * @description Get a list of the episodes saved in the current Spotify user's library.<br/>
    * This API endpoint is in __beta__ and could change without warning. Please share any feedback that you have, or issues that you discover, in our [developer community forum](https://community.spotify.com/t5/Spotify-for-Developers/bd-p/Spotify_Developer).
    */
@@ -3469,7 +3479,7 @@ export interface operations {
   };
   /**
    * Save Episodes for Current User
-   *  
+   *
    * @description Save one or more episodes to the current user's library.<br/>
    * This API endpoint is in __beta__ and could change without warning. Please share any feedback that you have, or issues that you discover, in our [developer community forum](https://community.spotify.com/t5/Spotify-for-Developers/bd-p/Spotify_Developer).
    */
@@ -3483,14 +3493,16 @@ export interface operations {
       content: {
         "application/json": {
           /** @description A JSON array of the [Spotify IDs](/documentation/web-api/concepts/spotify-uris-ids). <br/>A maximum of 50 items can be specified in one request. _**Note**: if the `ids` parameter is present in the query string, any IDs listed here in the body will be ignored._ */
-          ids: (string)[];
+          ids: string[];
           [key: string]: unknown;
         };
       };
     };
     responses: {
       /** @description Episode saved */
-      200: never;
+      200: {
+        content: never;
+      };
       401: components["responses"]["Unauthorized"];
       403: components["responses"]["Forbidden"];
       429: components["responses"]["TooManyRequests"];
@@ -3498,7 +3510,7 @@ export interface operations {
   };
   /**
    * Remove User's Saved Episodes
-   *  
+   *
    * @description Remove one or more episodes from the current user's library.<br/>
    * This API endpoint is in __beta__ and could change without warning. Please share any feedback that you have, or issues that you discover, in our [developer community forum](https://community.spotify.com/t5/Spotify-for-Developers/bd-p/Spotify_Developer).
    */
@@ -3512,14 +3524,16 @@ export interface operations {
       content: {
         "application/json": {
           /** @description A JSON array of the [Spotify IDs](/documentation/web-api/concepts/spotify-uris-ids). <br/>A maximum of 50 items can be specified in one request. _**Note**: if the `ids` parameter is present in the query string, any IDs listed here in the body will be ignored._ */
-          ids?: (string)[];
+          ids?: string[];
           [key: string]: unknown;
         };
       };
     };
     responses: {
       /** @description Episode removed */
-      200: never;
+      200: {
+        content: never;
+      };
       401: components["responses"]["Unauthorized"];
       403: components["responses"]["Forbidden"];
       429: components["responses"]["TooManyRequests"];
@@ -3527,7 +3541,7 @@ export interface operations {
   };
   /**
    * Check User's Saved Episodes
-   *  
+   *
    * @description Check if one or more episodes is already saved in the current Spotify user's 'Your Episodes' library.<br/>
    * This API endpoint is in __beta__ and could change without warning. Please share any feedback that you have, or issues that you discover, in our [developer community forum](https://community.spotify.com/t5/Spotify-for-Developers/bd-p/Spotify_Developer)..
    */
@@ -3546,7 +3560,7 @@ export interface operations {
   };
   /**
    * Get Followed Artists
-   *  
+   *
    * @description Get the current user's followed artists.
    */
   "get-followed": {
@@ -3566,7 +3580,7 @@ export interface operations {
   };
   /**
    * Follow Artists or Users
-   *  
+   *
    * @description Add the current user as a follower of one or more artists or other Spotify users.
    */
   "follow-artists-users": {
@@ -3583,14 +3597,16 @@ export interface operations {
            * @description A JSON array of the artist or user [Spotify IDs](/documentation/web-api/concepts/spotify-uris-ids).
            * For example: `{ids:["74ASZWbe4lXaubB36ztrGX", "08td7MxkoHQkXnWAYD8d6Q"]}`. A maximum of 50 IDs can be sent in one request. _**Note**: if the `ids` parameter is present in the query string, any IDs listed here in the body will be ignored._
            */
-          ids: (string)[];
+          ids: string[];
           [key: string]: unknown;
         };
       };
     };
     responses: {
       /** @description Artist or user followed */
-      204: never;
+      204: {
+        content: never;
+      };
       401: components["responses"]["Unauthorized"];
       403: components["responses"]["Forbidden"];
       429: components["responses"]["TooManyRequests"];
@@ -3598,7 +3614,7 @@ export interface operations {
   };
   /**
    * Unfollow Artists or Users
-   *  
+   *
    * @description Remove the current user as a follower of one or more artists or other Spotify users.
    */
   "unfollow-artists-users": {
@@ -3612,14 +3628,16 @@ export interface operations {
       content: {
         "application/json": {
           /** @description A JSON array of the artist or user [Spotify IDs](/documentation/web-api/concepts/spotify-uris-ids). For example: `{ids:["74ASZWbe4lXaubB36ztrGX", "08td7MxkoHQkXnWAYD8d6Q"]}`. A maximum of 50 IDs can be sent in one request. _**Note**: if the `ids` parameter is present in the query string, any IDs listed here in the body will be ignored._ */
-          ids?: (string)[];
+          ids?: string[];
           [key: string]: unknown;
         };
       };
     };
     responses: {
       /** @description Artist or user unfollowed */
-      200: never;
+      200: {
+        content: never;
+      };
       401: components["responses"]["Unauthorized"];
       403: components["responses"]["Forbidden"];
       429: components["responses"]["TooManyRequests"];
@@ -3627,7 +3645,7 @@ export interface operations {
   };
   /**
    * Check If User Follows Artists or Users
-   *  
+   *
    * @description Check to see if the current user is following one or more artists or other Spotify users.
    */
   "check-current-user-follows": {
@@ -3646,7 +3664,7 @@ export interface operations {
   };
   /**
    * Get Playback State
-   *  
+   *
    * @description Get information about the user’s current playback state, including track or episode, progress, and active device.
    */
   "get-information-about-the-users-current-playback": {
@@ -3659,7 +3677,9 @@ export interface operations {
     responses: {
       200: components["responses"]["OneCurrentlyPlaying"];
       /** @description Playback not available or active */
-      204: never;
+      204: {
+        content: never;
+      };
       401: components["responses"]["Unauthorized"];
       403: components["responses"]["Forbidden"];
       429: components["responses"]["TooManyRequests"];
@@ -3667,7 +3687,7 @@ export interface operations {
   };
   /**
    * Transfer Playback
-   *  
+   *
    * @description Transfer playback to a new device and determine if it should start playing.
    */
   "transfer-a-users-playback": {
@@ -3675,7 +3695,7 @@ export interface operations {
       content: {
         "application/json": {
           /** @description A JSON array containing the ID of the device on which playback should be started/transferred.<br/>For example:`{device_ids:["74ASZWbe4lXaubB36ztrGX"]}`<br/>_**Note**: Although an array is accepted, only a single device_id is currently supported. Supplying more than one will return `400 Bad Request`_ */
-          device_ids: (string)[];
+          device_ids: string[];
           /** @description **true**: ensure playback happens on new device.<br/>**false** or not provided: keep the current playback state. */
           play?: boolean;
           [key: string]: unknown;
@@ -3684,7 +3704,9 @@ export interface operations {
     };
     responses: {
       /** @description Playback transferred */
-      204: never;
+      204: {
+        content: never;
+      };
       401: components["responses"]["Unauthorized"];
       403: components["responses"]["Forbidden"];
       429: components["responses"]["TooManyRequests"];
@@ -3692,7 +3714,7 @@ export interface operations {
   };
   /**
    * Get Currently Playing Track
-   *  
+   *
    * @description Get the object currently being played on the user's Spotify account.
    */
   "get-the-users-currently-playing-track": {
@@ -3711,7 +3733,7 @@ export interface operations {
   };
   /**
    * Get Available Devices
-   *  
+   *
    * @description Get information about a user’s available devices.
    */
   "get-a-users-available-devices": {
@@ -3724,7 +3746,7 @@ export interface operations {
   };
   /**
    * Skip To Next
-   *  
+   *
    * @description Skips to next track in the user’s queue.
    */
   "skip-users-playback-to-next-track": {
@@ -3735,7 +3757,9 @@ export interface operations {
     };
     responses: {
       /** @description Command sent */
-      204: never;
+      204: {
+        content: never;
+      };
       401: components["responses"]["Unauthorized"];
       403: components["responses"]["Forbidden"];
       429: components["responses"]["TooManyRequests"];
@@ -3743,7 +3767,7 @@ export interface operations {
   };
   /**
    * Pause Playback
-   *  
+   *
    * @description Pause playback on the user's account.
    */
   "pause-a-users-playback": {
@@ -3754,7 +3778,9 @@ export interface operations {
     };
     responses: {
       /** @description Playback paused */
-      204: never;
+      204: {
+        content: never;
+      };
       401: components["responses"]["Unauthorized"];
       403: components["responses"]["Forbidden"];
       429: components["responses"]["TooManyRequests"];
@@ -3762,7 +3788,7 @@ export interface operations {
   };
   /**
    * Start/Resume Playback
-   *  
+   *
    * @description Start a new context or resume current playback on the user's active device.
    */
   "start-a-users-playback": {
@@ -3794,14 +3820,16 @@ export interface operations {
            * @description Optional. A JSON array of the Spotify track URIs to play.
            * For example: `{"uris": ["spotify:track:4iV5W9uYEdYUVa79Axb7Rh", "spotify:track:1301WleyT98MSxVHPZCA6M"]}`
            */
-          uris?: (string)[];
+          uris?: string[];
           [key: string]: unknown;
         };
       };
     };
     responses: {
       /** @description Playback started */
-      204: never;
+      204: {
+        content: never;
+      };
       401: components["responses"]["Unauthorized"];
       403: components["responses"]["Forbidden"];
       429: components["responses"]["TooManyRequests"];
@@ -3809,7 +3837,7 @@ export interface operations {
   };
   /**
    * Skip To Previous
-   *  
+   *
    * @description Skips to previous track in the user’s queue.
    */
   "skip-users-playback-to-previous-track": {
@@ -3820,7 +3848,9 @@ export interface operations {
     };
     responses: {
       /** @description Command sent */
-      204: never;
+      204: {
+        content: never;
+      };
       401: components["responses"]["Unauthorized"];
       403: components["responses"]["Forbidden"];
       429: components["responses"]["TooManyRequests"];
@@ -3828,7 +3858,7 @@ export interface operations {
   };
   /**
    * Get the User's Queue
-   *  
+   *
    * @description Get the list of objects that make up the user's queue.
    */
   "get-queue": {
@@ -3841,7 +3871,7 @@ export interface operations {
   };
   /**
    * Add Item to Playback Queue
-   *  
+   *
    * @description Add an item to the end of the user's current playback queue.
    */
   "add-to-queue": {
@@ -3853,7 +3883,9 @@ export interface operations {
     };
     responses: {
       /** @description Command received */
-      204: never;
+      204: {
+        content: never;
+      };
       401: components["responses"]["Unauthorized"];
       403: components["responses"]["Forbidden"];
       429: components["responses"]["TooManyRequests"];
@@ -3861,7 +3893,7 @@ export interface operations {
   };
   /**
    * Get Recently Played Tracks
-   *  
+   *
    * @description Get tracks from the current user's recently played tracks.
    * _**Note**: Currently doesn't support podcast episodes._
    */
@@ -3882,7 +3914,7 @@ export interface operations {
   };
   /**
    * Set Repeat Mode
-   *  
+   *
    * @description Set the repeat mode for the user's playback. Options are repeat-track,
    * repeat-context, and off.
    */
@@ -3895,7 +3927,9 @@ export interface operations {
     };
     responses: {
       /** @description Command sent */
-      204: never;
+      204: {
+        content: never;
+      };
       401: components["responses"]["Unauthorized"];
       403: components["responses"]["Forbidden"];
       429: components["responses"]["TooManyRequests"];
@@ -3903,7 +3937,7 @@ export interface operations {
   };
   /**
    * Seek To Position
-   *  
+   *
    * @description Seeks to the given position in the user’s currently playing track.
    */
   "seek-to-position-in-currently-playing-track": {
@@ -3915,7 +3949,9 @@ export interface operations {
     };
     responses: {
       /** @description Command sent */
-      204: never;
+      204: {
+        content: never;
+      };
       401: components["responses"]["Unauthorized"];
       403: components["responses"]["Forbidden"];
       429: components["responses"]["TooManyRequests"];
@@ -3923,7 +3959,7 @@ export interface operations {
   };
   /**
    * Toggle Playback Shuffle
-   *  
+   *
    * @description Toggle shuffle on or off for user’s playback.
    */
   "toggle-shuffle-for-users-playback": {
@@ -3935,7 +3971,9 @@ export interface operations {
     };
     responses: {
       /** @description Command sent */
-      204: never;
+      204: {
+        content: never;
+      };
       401: components["responses"]["Unauthorized"];
       403: components["responses"]["Forbidden"];
       429: components["responses"]["TooManyRequests"];
@@ -3943,7 +3981,7 @@ export interface operations {
   };
   /**
    * Set Playback Volume
-   *  
+   *
    * @description Set the volume for the user’s current playback device.
    */
   "set-volume-for-users-playback": {
@@ -3955,7 +3993,9 @@ export interface operations {
     };
     responses: {
       /** @description Command sent */
-      204: never;
+      204: {
+        content: never;
+      };
       401: components["responses"]["Unauthorized"];
       403: components["responses"]["Forbidden"];
       429: components["responses"]["TooManyRequests"];
@@ -3963,7 +4003,7 @@ export interface operations {
   };
   /**
    * Get Current User's Playlists
-   *  
+   *
    * @description Get a list of the playlists owned or followed by the current Spotify
    * user.
    */
@@ -3983,7 +4023,7 @@ export interface operations {
   };
   /**
    * Get User's Saved Shows
-   *  
+   *
    * @description Get a list of shows saved in the current Spotify user's library. Optional parameters can be used to limit the number of shows returned.
    */
   "get-users-saved-shows": {
@@ -4002,7 +4042,7 @@ export interface operations {
   };
   /**
    * Save Shows for Current User
-   *  
+   *
    * @description Save one or more shows to current Spotify user's library.
    */
   "save-shows-user": {
@@ -4015,16 +4055,18 @@ export interface operations {
       content: {
         "application/json": {
           /**
-           * @description A JSON array of the [Spotify IDs](https://developer.spotify.com/documentation/web-api/#spotify-uris-and-ids).  
+           * @description A JSON array of the [Spotify IDs](https://developer.spotify.com/documentation/web-api/#spotify-uris-and-ids).
            * A maximum of 50 items can be specified in one request. *Note: if the `ids` parameter is present in the query string, any IDs listed here in the body will be ignored.*
            */
-          ids?: (string)[];
+          ids?: string[];
         };
       };
     };
     responses: {
       /** @description Show saved */
-      200: never;
+      200: {
+        content: never;
+      };
       401: components["responses"]["Unauthorized"];
       403: components["responses"]["Forbidden"];
       429: components["responses"]["TooManyRequests"];
@@ -4032,7 +4074,7 @@ export interface operations {
   };
   /**
    * Remove User's Saved Shows
-   *  
+   *
    * @description Delete one or more shows from current Spotify user's library.
    */
   "remove-shows-user": {
@@ -4046,16 +4088,18 @@ export interface operations {
       content: {
         "application/json": {
           /**
-           * @description A JSON array of the [Spotify IDs](https://developer.spotify.com/documentation/web-api/#spotify-uris-and-ids).  
+           * @description A JSON array of the [Spotify IDs](https://developer.spotify.com/documentation/web-api/#spotify-uris-and-ids).
            * A maximum of 50 items can be specified in one request. *Note: if the `ids` parameter is present in the query string, any IDs listed here in the body will be ignored.*
            */
-          ids?: (string)[];
+          ids?: string[];
         };
       };
     };
     responses: {
       /** @description Show removed */
-      200: never;
+      200: {
+        content: never;
+      };
       401: components["responses"]["Unauthorized"];
       403: components["responses"]["Forbidden"];
       429: components["responses"]["TooManyRequests"];
@@ -4063,7 +4107,7 @@ export interface operations {
   };
   /**
    * Check User's Saved Shows
-   *  
+   *
    * @description Check if one or more shows is already saved in the current Spotify user's library.
    */
   "check-users-saved-shows": {
@@ -4081,7 +4125,7 @@ export interface operations {
   };
   /**
    * Get User's Top Artists
-   *  
+   *
    * @description Get the current user's top artists based on calculated affinity.
    */
   "get-users-top-artists": {
@@ -4101,7 +4145,7 @@ export interface operations {
   };
   /**
    * Get User's Top Tracks
-   *  
+   *
    * @description Get the current user's top tracks based on calculated affinity.
    */
   "get-users-top-tracks": {
@@ -4121,7 +4165,7 @@ export interface operations {
   };
   /**
    * Get User's Saved Tracks
-   *  
+   *
    * @description Get a list of the songs saved in the current Spotify user's 'Your Music' library.
    */
   "get-users-saved-tracks": {
@@ -4141,7 +4185,7 @@ export interface operations {
   };
   /**
    * Save Tracks for Current User
-   *  
+   *
    * @description Save one or more tracks to the current user's 'Your Music' library.
    */
   "save-tracks-user": {
@@ -4154,14 +4198,16 @@ export interface operations {
       content: {
         "application/json": {
           /** @description A JSON array of the [Spotify IDs](/documentation/web-api/concepts/spotify-uris-ids). For example: `["4iV5W9uYEdYUVa79Axb7Rh", "1301WleyT98MSxVHPZCA6M"]`<br/>A maximum of 50 items can be specified in one request. _**Note**: if the `ids` parameter is present in the query string, any IDs listed here in the body will be ignored._ */
-          ids: (string)[];
+          ids: string[];
           [key: string]: unknown;
         };
       };
     };
     responses: {
       /** @description Track saved */
-      200: never;
+      200: {
+        content: never;
+      };
       401: components["responses"]["Unauthorized"];
       403: components["responses"]["Forbidden"];
       429: components["responses"]["TooManyRequests"];
@@ -4169,7 +4215,7 @@ export interface operations {
   };
   /**
    * Remove User's Saved Tracks
-   *  
+   *
    * @description Remove one or more tracks from the current user's 'Your Music' library.
    */
   "remove-tracks-user": {
@@ -4182,14 +4228,16 @@ export interface operations {
       content: {
         "application/json": {
           /** @description A JSON array of the [Spotify IDs](/documentation/web-api/concepts/spotify-uris-ids). For example: `["4iV5W9uYEdYUVa79Axb7Rh", "1301WleyT98MSxVHPZCA6M"]`<br/>A maximum of 50 items can be specified in one request. _**Note**: if the `ids` parameter is present in the query string, any IDs listed here in the body will be ignored._ */
-          ids?: (string)[];
+          ids?: string[];
           [key: string]: unknown;
         };
       };
     };
     responses: {
       /** @description Track removed */
-      200: never;
+      200: {
+        content: never;
+      };
       401: components["responses"]["Unauthorized"];
       403: components["responses"]["Forbidden"];
       429: components["responses"]["TooManyRequests"];
@@ -4197,7 +4245,7 @@ export interface operations {
   };
   /**
    * Check User's Saved Tracks
-   *  
+   *
    * @description Check if one or more tracks is already saved in the current Spotify user's 'Your Music' library.
    */
   "check-users-saved-tracks": {
@@ -4215,7 +4263,7 @@ export interface operations {
   };
   /**
    * Get Playlist
-   *  
+   *
    * @description Get a playlist owned by a Spotify user.
    */
   "get-playlist": {
@@ -4238,7 +4286,7 @@ export interface operations {
   };
   /**
    * Change Playlist Details
-   *  
+   *
    * @description Change a playlist's name and public/private state. (The user must, of
    * course, own the playlist.)
    */
@@ -4268,7 +4316,9 @@ export interface operations {
     };
     responses: {
       /** @description Playlist updated */
-      200: never;
+      200: {
+        content: never;
+      };
       401: components["responses"]["Unauthorized"];
       403: components["responses"]["Forbidden"];
       429: components["responses"]["TooManyRequests"];
@@ -4276,7 +4326,7 @@ export interface operations {
   };
   /**
    * Follow Playlist
-   *  
+   *
    * @description Add the current user as a follower of a playlist.
    */
   "follow-playlist": {
@@ -4296,7 +4346,9 @@ export interface operations {
     };
     responses: {
       /** @description Playlist followed */
-      200: never;
+      200: {
+        content: never;
+      };
       401: components["responses"]["Unauthorized"];
       403: components["responses"]["Forbidden"];
       429: components["responses"]["TooManyRequests"];
@@ -4304,7 +4356,7 @@ export interface operations {
   };
   /**
    * Unfollow Playlist
-   *  
+   *
    * @description Remove the current user as a follower of a playlist.
    */
   "unfollow-playlist": {
@@ -4315,7 +4367,9 @@ export interface operations {
     };
     responses: {
       /** @description Playlist unfollowed */
-      200: never;
+      200: {
+        content: never;
+      };
       401: components["responses"]["Unauthorized"];
       403: components["responses"]["Forbidden"];
       429: components["responses"]["TooManyRequests"];
@@ -4323,7 +4377,7 @@ export interface operations {
   };
   /**
    * Check if Users Follow Playlist
-   *  
+   *
    * @description Check to see if one or more Spotify users are following a specified playlist.
    */
   "check-if-user-follows-playlist": {
@@ -4344,7 +4398,7 @@ export interface operations {
   };
   /**
    * Get Playlist Cover Image
-   *  
+   *
    * @description Get the current image associated with a specific playlist.
    */
   "get-playlist-cover": {
@@ -4362,7 +4416,7 @@ export interface operations {
   };
   /**
    * Add Custom Playlist Cover Image
-   *  
+   *
    * @description Replace the image used to represent a specific playlist.
    */
   "upload-custom-playlist-cover": {
@@ -4379,7 +4433,9 @@ export interface operations {
     };
     responses: {
       /** @description Image uploaded */
-      200: never;
+      200: {
+        content: never;
+      };
       401: components["responses"]["Unauthorized"];
       403: components["responses"]["Forbidden"];
       429: components["responses"]["TooManyRequests"];
@@ -4387,7 +4443,7 @@ export interface operations {
   };
   /**
    * Get Playlist Items
-   *  
+   *
    * @description Get full details of the items of a playlist owned by a Spotify user.
    */
   "get-playlists-tracks": {
@@ -4412,7 +4468,7 @@ export interface operations {
   };
   /**
    * Update Playlist Items
-   *  
+   *
    * @description Either reorder or replace items in a playlist depending on the request's parameters.
    * To reorder items, include `range_start`, `insert_before`, `range_length` and `snapshot_id` in the request's body.
    * To replace items, include `uris` as either a query parameter or in the request's body.
@@ -4441,7 +4497,7 @@ export interface operations {
           range_start?: number;
           /** @description The playlist's snapshot ID against which you want to make the changes. */
           snapshot_id?: string;
-          uris?: (string)[];
+          uris?: string[];
           [key: string]: unknown;
         };
       };
@@ -4455,7 +4511,7 @@ export interface operations {
   };
   /**
    * Add Items to Playlist
-   *  
+   *
    * @description Add one or more items to a user's playlist.
    */
   "add-tracks-to-playlist": {
@@ -4474,7 +4530,7 @@ export interface operations {
           /** @description The position to insert the items, a zero-based index. For example, to insert the items in the first position: `position=0` ; to insert the items in the third position: `position=2`. If omitted, the items will be appended to the playlist. Items are added in the order they appear in the uris array. For example: `{"uris": ["spotify:track:4iV5W9uYEdYUVa79Axb7Rh","spotify:track:1301WleyT98MSxVHPZCA6M"], "position": 3}` */
           position?: number;
           /** @description A JSON array of the [Spotify URIs](/documentation/web-api/concepts/spotify-uris-ids) to add. For example: `{"uris": ["spotify:track:4iV5W9uYEdYUVa79Axb7Rh","spotify:track:1301WleyT98MSxVHPZCA6M", "spotify:episode:512ojhOuo1ktJprKbVcKyQ"]}`<br/>A maximum of 100 items can be added in one request. _**Note**: if the `uris` parameter is present in the query string, any URIs listed here in the body will be ignored._ */
-          uris?: (string)[];
+          uris?: string[];
           [key: string]: unknown;
         };
       };
@@ -4488,7 +4544,7 @@ export interface operations {
   };
   /**
    * Remove Playlist Items
-   *  
+   *
    * @description Remove one or more items from a user's playlist.
    */
   "remove-tracks-playlist": {
@@ -4510,10 +4566,10 @@ export interface operations {
            * @description An array of objects containing [Spotify URIs](/documentation/web-api/concepts/spotify-uris-ids) of the tracks or episodes to remove.
            * For example: `{ "tracks": [{ "uri": "spotify:track:4iV5W9uYEdYUVa79Axb7Rh" },{ "uri": "spotify:track:1301WleyT98MSxVHPZCA6M" }] }`. A maximum of 100 objects can be sent at once.
            */
-          tracks: ({
+          tracks: {
               /** @description Spotify URI */
               uri?: string;
-            })[];
+            }[];
         };
       };
     };
@@ -4526,9 +4582,9 @@ export interface operations {
   };
   /**
    * Get Recommendations
-   *  
+   *
    * @description Recommendations are generated based on the available information for a given seed entity and matched against similar artists and tracks. If there is sufficient information about the provided seeds, a list of tracks will be returned together with pool size details.
-   * 
+   *
    * For artists and tracks that are very new or obscure there might not be enough data to generate a list of tracks.
    */
   "get-recommendations": {
@@ -4592,7 +4648,7 @@ export interface operations {
   };
   /**
    * Get Available Genre Seeds
-   *  
+   *
    * @description Retrieve a list of available genres seed parameter values for [recommendations](/documentation/web-api/reference/get-recommendations).
    */
   "get-recommendation-genres": {
@@ -4605,7 +4661,7 @@ export interface operations {
   };
   /**
    * Search for Item
-   *  
+   *
    * @description Get Spotify catalog information about albums, artists, playlists, tracks, shows, episodes or audiobooks
    * that match a keyword string.<br />
    * **Note: Audiobooks are only available for the US, UK, Ireland, New Zealand and Australia markets.**
@@ -4630,7 +4686,7 @@ export interface operations {
   };
   /**
    * Get Several Shows
-   *  
+   *
    * @description Get Spotify catalog information for several shows based on their Spotify IDs.
    */
   "get-multiple-shows": {
@@ -4649,7 +4705,7 @@ export interface operations {
   };
   /**
    * Get Show
-   *  
+   *
    * @description Get Spotify catalog information for a single show identified by its
    * unique Spotify ID.
    */
@@ -4671,7 +4727,7 @@ export interface operations {
   };
   /**
    * Get Show Episodes
-   *  
+   *
    * @description Get Spotify catalog information about an show’s episodes. Optional parameters can be used to limit the number of episodes returned.
    */
   "get-a-shows-episodes": {
@@ -4694,7 +4750,7 @@ export interface operations {
   };
   /**
    * Get Several Tracks
-   *  
+   *
    * @description Get Spotify catalog information for multiple tracks based on their Spotify IDs.
    */
   "get-several-tracks": {
@@ -4713,7 +4769,7 @@ export interface operations {
   };
   /**
    * Get Track
-   *  
+   *
    * @description Get Spotify catalog information for a single track identified by its
    * unique Spotify ID.
    */
@@ -4735,7 +4791,7 @@ export interface operations {
   };
   /**
    * Get User's Profile
-   *  
+   *
    * @description Get public profile information about a Spotify user.
    */
   "get-users-profile": {
@@ -4753,7 +4809,7 @@ export interface operations {
   };
   /**
    * Get User's Playlists
-   *  
+   *
    * @description Get a list of the playlists owned or followed by a Spotify user.
    */
   "get-list-users-playlists": {
@@ -4775,7 +4831,7 @@ export interface operations {
   };
   /**
    * Create Playlist
-   *  
+   *
    * @description Create a playlist for a Spotify user. (The playlist will be empty until
    * you [add tracks](/documentation/web-api/reference/add-tracks-to-playlist).)
    */

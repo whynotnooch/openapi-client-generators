@@ -1631,7 +1631,17 @@ export type put_Meplayer = typeof put_Meplayer;
 export const put_Meplayer = {
   method: z.literal("PUT"),
   path: z.literal("/me/player"),
-  parameters: z.never(),
+  parameters: z.object({
+    body: z.intersection(
+      z.object({
+        device_ids: z.array(z.string()),
+        play: z.union([z.boolean(), z.undefined()]).optional(),
+      }),
+      z.object({
+        string: z.any(),
+      }),
+    ),
+  }),
   response: z.unknown(),
 };
 

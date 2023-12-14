@@ -1475,7 +1475,7 @@ paths:
     put:
       description: |
         Transfer playback to a new device and determine if it should start playing.
-            requestBody:
+      requestBody:
         content:
           application/json:
             schema:

@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
+    "generate": "bash ./scripts/generate.sh ../../src/spotify-openapi.yaml ./src/generated/spotify-openapi.d.ts yaml",
     "preview": "vite preview"
   },
   "devDependencies": {

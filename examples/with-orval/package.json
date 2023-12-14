@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
+    "generate": "orval --input ../../src/spotify-openapi.yaml --output ./src/generated/spotify.ts",
     "preview": "vite preview"
   },
   "devDependencies": {
