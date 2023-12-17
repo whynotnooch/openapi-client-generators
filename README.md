@@ -1,8 +1,22 @@
 # openapi-client-generators
 
-Many examples out there in articles and blogs are based of the _Pet Store_ OpenAPI example spec ([link](https://github.com/OAI/OpenAPI-Specification/blob/main/examples/v3.0/petstore.json)) which is a little lightweight to illustrate a real life use case. This comparison is using the Spotify OpenAPI spec ([link](https://raw.githubusercontent.com/APIs-guru/openapi-directory/main/APIs/spotify.com/sonallux/2023.2.27/openapi.yaml)).
+This document aims to make a well-informed comparison of OpenAPI tools to generate type-safe (Typescript) client from an OpenAPI specification.
+
+## Why OpenAPI?
+
+OpenAPI, previously known as Swagger, is the de facto standard language agnostic specification for REST APIs. It benefits from a wide range of tools for code generation, tests and documentation.
+
+### What about GraphQL?
+
+_TODO_
+
+### What about tRPC?
+
+_TODO_
 
 ## Overview
+
+For each of the following tools, we generated a client from a real life use case ([Spotify OpenAPI specification](https://raw.githubusercontent.com/APIs-guru/openapi-directory/main/APIs/spotify.com/sonallux/2023.2.27/openapi.yaml)) and wrote a dead simple example application in order to compare generated clients capabilities, ease of use and bundle size footprint, and more.
 
 | Library                                                                                                                                                                       |                             Bundle size (gzip)[1] |                                                                                                      Last release |                                                                                                               Stars |                                                                                 Downloads |
 | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------: | ----------------------------------------------------------------------------------------------------------------: | ------------------------------------------------------------------------------------------------------------------: | ----------------------------------------------------------------------------------------: |
@@ -23,6 +37,8 @@ Many examples out there in articles and blogs are based of the _Pet Store_ OpenA
 **Notes:**
 
 - [1]: Variations come from using a few endpoints or importing the entire client. Other generated clients have a flat cost.
+
+## Deep dive
 
 ### feTs
 
