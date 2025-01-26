@@ -1,18 +1,8 @@
 # openapi-client-generators
 
-This document aims to make a well-informed comparison of OpenAPI tools to generate type-safe (Typescript) client from an OpenAPI specification.
+A list of awesome OpenAPI client generators.
 
-## Why OpenAPI?
-
-OpenAPI, previously known as Swagger, is the de facto standard language agnostic specification for REST APIs. It benefits from a wide range of tools for code generation, tests and documentation.
-
-### What about GraphQL?
-
-_TODO_
-
-### What about tRPC?
-
-_TODO_
+This document aims to make a informed comparison of OpenAPI tools to generate type-safe (Typescript) client from an OpenAPI specification file.
 
 ## Overview
 
@@ -21,7 +11,7 @@ For each of the following tools, we generated a client from a real life use case
 | Library                                                                                                                                                                       |                             Bundle size (gzip)[1] |                                                                                                      Last release |                                                                                                               Stars |                                                                                 Downloads |
 | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------: | ----------------------------------------------------------------------------------------------------------------: | ------------------------------------------------------------------------------------------------------------------: | ----------------------------------------------------------------------------------------: |
 | abaca<br />[NPM](https://www.npmjs.com/package/abaca)                                                                                                                         |                                31.65 kB (4.41 kB) |                               ![GitHub release (with filter)](https://img.shields.io/npm/v/abaca?logo=npm&label=) |                          ![GitHub Repo stars](https://img.shields.io/github/stars/opvious/abaca?logo=github&label=) |                               ![npm](https://img.shields.io/npm/dm/abaca?logo=npm&label=) |
-| feTS<br />[NPM](https://www.npmjs.com/package/fets) - [Docs](https://the-guild.dev/) - [Bundlephobia](https://bundlephobia.com/package/fets)                                  |                               38.01 kB (12.77 kB) |                                ![GitHub release (with filter)](https://img.shields.io/npm/v/fets?logo=npm&label=) |                           ![GitHub Repo stars](https://img.shields.io/github/stars/ardatan/fets?logo=github&label=) |                                ![npm](https://img.shields.io/npm/dm/fets?logo=npm&label=) |
+| feTS[2]<br />[NPM](https://www.npmjs.com/package/fets) - [Docs](https://the-guild.dev/) - [Bundlephobia](https://bundlephobia.com/package/fets)                               |                               38.01 kB (12.77 kB) |                                ![GitHub release (with filter)](https://img.shields.io/npm/v/fets?logo=npm&label=) |                           ![GitHub Repo stars](https://img.shields.io/github/stars/ardatan/fets?logo=github&label=) |                                ![npm](https://img.shields.io/npm/dm/fets?logo=npm&label=) |
 | oazapfts<br />[NPM](https://www.npmjs.com/package/oazapfts)                                                                                                                   |     8.52 kB (3.10 kB)<br />🚛: 22.02 kB (5.57 kB) |                            ![GitHub release (with filter)](https://img.shields.io/npm/v/oazapfts?logo=npm&label=) |                      ![GitHub Repo stars](https://img.shields.io/github/stars/oazapfts/oazapfts?logo=github&label=) |                            ![npm](https://img.shields.io/npm/dm/oazapfts?logo=npm&label=) |
 | openapi-generator-cli<br />[NPM](https://www.npmjs.com/package/@openapitools/openapi-generator-cli)                                                                           | 56.20 kB (15.96 kB)<br />🚛: 121.59 kB (21.02 kB) | ![GitHub release (with filter)](https://img.shields.io/npm/v/@openapitools/openapi-generator-cli?logo=npm&label=) |         ![GitHub Repo stars](https://img.shields.io/github/stars/OpenAPITools/openapi-generator?logo=github&label=) | ![npm](https://img.shields.io/npm/dm/@openapitools/openapi-generator-cli?logo=npm&label=) |
 | openapi-fetch<br />[NPM](https://www.npmjs.com/package/openapi-fetch) - [Docs](https://openapi-ts.pages.dev) - [Bundlephobia](https://bundlephobia.com/package/openapi-fetch) |                                 3.80 kB (1.62 kB) |                       ![GitHub release (with filter)](https://img.shields.io/npm/v/openapi-fetch?logo=npm&label=) |                   ![GitHub Repo stars](https://img.shields.io/github/stars/drwpow/openapi-fetch?logo=github&label=) |                       ![npm](https://img.shields.io/npm/dm/openapi-fetch?logo=npm&label=) |
@@ -38,16 +28,15 @@ For each of the following tools, we generated a client from a real life use case
 
 - [1]: Variations come from using a few endpoints or importing the entire client. Other generated clients have a flat cost.
 
-## Deep dive
+## Additional notes
 
 ### feTs
 
-- scripts/generate.sh
-- https://github.com/microsoft/TypeScript/issues/32063
+`feTS` requires a typescript file as the input. A script `scripts/generate.sh` downloads the OpenAPI spec file and converts it from YAML to JSON and from JSON to Typescript. [https://github.com/microsoft/TypeScript/issues/32063](https://github.com/microsoft/TypeScript/issues/32063)
 
 ### openapi-generator-cli
 
-NB: Use v6.6.0, as v7.1.0 fails on generating the client with a number of Typescript compilation errors like so:
+Using v7.1.0 failed on generating the client with a number of TypeScript compilation errors. The example uses v6.6.0 instead.
 
 ```
 ...
@@ -63,14 +52,9 @@ src/generated/spotify/api.ts:7714:13 - error TS2451: Cannot redeclare block-scop
 ...
 ```
 
-### orval
-
-```
-Argument of type '{ url: string; method: "put"; headers: { 'Content-Type': string; }; data: FollowArtistsUsersBody; params: FollowArtistsUsersParams; }' is not assignable to parameter of type '{ url: string; method: "get" | "post" | "put" | "delete" | "patch"; params?: any; data?: unknown; responseType?: string | undefined; }'.
-  Object literal may only specify known properties, and 'headers' does not exist in type '{ url: string; method: "get" | "post" | "put" | "delete" | "patch"; params?: any; data?: unknown; responseType?: string | undefined; }'.
-```
-
 ### typed-openapi
 
-- https://github.com/astahmer/typed-openapi/issues/19
-- https://github.com/astahmer/typed-openapi/issues/2
+To generate the client/types, we had to update the input OpenAPI spec file in order to remove the property `operationId`
+
+- [https://github.com/astahmer/typed-openapi/issues/19](https://github.com/astahmer/typed-openapi/issues/19)
+- [https://github.com/astahmer/typed-openapi/issues/2](https://github.com/astahmer/typed-openapi/issues/2)
