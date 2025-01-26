@@ -1,8 +1,12 @@
 # openapi-client-generators
 
-Many examples out there in articles and blogs are based of the _Pet Store_ OpenAPI example spec ([link](https://github.com/OAI/OpenAPI-Specification/blob/main/examples/v3.0/petstore.json)) which is a little lightweight to illustrate a real life use case. This comparison is using the Spotify OpenAPI spec ([link](https://raw.githubusercontent.com/APIs-guru/openapi-directory/main/APIs/spotify.com/sonallux/2023.2.27/openapi.yaml)).
+A list of awesome OpenAPI client generators.
+
+This document aims to make a informed comparison of OpenAPI tools to generate type-safe (Typescript) client from an OpenAPI specification file.
 
 ## Overview
+
+For each of the following tools, we generated a client from a real life use case ([Spotify OpenAPI specification](https://raw.githubusercontent.com/APIs-guru/openapi-directory/main/APIs/spotify.com/sonallux/2023.2.27/openapi.yaml)) and wrote a dead simple example application in order to compare generated clients capabilities, ease of use and bundle size footprint, and more.
 
 | Library                                                                                                                                                                       |                             Bundle size (gzip)[1] |                                                                                                      Last release |                                                                                                               Stars |                                                                                 Downloads |
 | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------: | ----------------------------------------------------------------------------------------------------------------: | ------------------------------------------------------------------------------------------------------------------: | ----------------------------------------------------------------------------------------: |
@@ -24,14 +28,15 @@ Many examples out there in articles and blogs are based of the _Pet Store_ OpenA
 
 - [1]: Variations come from using a few endpoints or importing the entire client. Other generated clients have a flat cost.
 
+## Additional notes
+
 ### feTs
 
-- scripts/generate.sh
-- https://github.com/microsoft/TypeScript/issues/32063
+`feTS` requires a typescript file as the input. A script `scripts/generate.sh` downloads the OpenAPI spec file and converts it from YAML to JSON and from JSON to Typescript. [https://github.com/microsoft/TypeScript/issues/32063](https://github.com/microsoft/TypeScript/issues/32063)
 
 ### openapi-generator-cli
 
-NB: Use v6.6.0, as v7.1.0 fails on generating the client with a number of Typescript compilation errors like so:
+Using v7.1.0 failed on generating the client with a number of TypeScript compilation errors. The example uses v6.6.0 instead.
 
 ```
 ...
@@ -47,14 +52,9 @@ src/generated/spotify/api.ts:7714:13 - error TS2451: Cannot redeclare block-scop
 ...
 ```
 
-### orval
-
-```
-Argument of type '{ url: string; method: "put"; headers: { 'Content-Type': string; }; data: FollowArtistsUsersBody; params: FollowArtistsUsersParams; }' is not assignable to parameter of type '{ url: string; method: "get" | "post" | "put" | "delete" | "patch"; params?: any; data?: unknown; responseType?: string | undefined; }'.
-  Object literal may only specify known properties, and 'headers' does not exist in type '{ url: string; method: "get" | "post" | "put" | "delete" | "patch"; params?: any; data?: unknown; responseType?: string | undefined; }'.
-```
-
 ### typed-openapi
 
-- https://github.com/astahmer/typed-openapi/issues/19
-- https://github.com/astahmer/typed-openapi/issues/2
+To generate the client/types, we had to update the input OpenAPI spec file in order to remove the property `operationId`
+
+- [https://github.com/astahmer/typed-openapi/issues/19](https://github.com/astahmer/typed-openapi/issues/19)
+- [https://github.com/astahmer/typed-openapi/issues/2](https://github.com/astahmer/typed-openapi/issues/2)
